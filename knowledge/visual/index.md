@@ -10,7 +10,10 @@
 
 ## P1
 - `shape_language.md`
+- `character_readability.md`
 - `camera_depth.md`
+- `environment_art.md`
+- `visual_storytelling.md`
 - `materials_textures.md`
 - `vfx.md`
 - `procedural_art.md`
