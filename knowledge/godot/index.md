@@ -1,10 +1,11 @@
 # Godot Lead — Index
 
-**Fonte canônica:** documentação oficial `/en/stable/`.
-A documentação stable consultada em 2026-10-07 está na branch Godot 4.x; qualquer módulo deve registrar versão quando API/comportamento for sensível.
+Fonte canônica: documentação oficial `/en/stable/`.
+Registrar versão quando comportamento/API for sensível.
 
 ## P0
 - `project_architecture.md`
+- `composition_inheritance.md`
 - `scenes_nodes.md`
 - `resources.md`
 - `signals.md`
@@ -25,7 +26,9 @@ A documentação stable consultada em 2026-10-07 está na branch Godot 4.x; qual
 - `particles_vfx.md`
 - `rendering.md`
 - `audio.md`
-- `tool_scripts.md`
+- `memory_management.md`
+- `testing.md`
+- `tooling_editor_scripts.md`
 - `export_deployment.md`
 - `migration.md`
 
@@ -33,3 +36,6 @@ A documentação stable consultada em 2026-10-07 está na branch Godot 4.x; qual
 - `multiplayer.md`
 - `servers_low_level.md`
 - `gdextension.md`
+
+## Regra
+Não carregar P2 a menos que a tarefa realmente exija.
