@@ -1,26 +1,29 @@
 # AGENTS.md — Knowledge Router
 
-Este arquivo é um **mapa**. Não carregue toda a Knowledge Base.
+Este arquivo é um mapa. Não carregue toda a Knowledge Base.
 
 ## Regras universais
 - Entenda a tarefa antes de abrir documentação.
-- Pesquise por arquivo/símbolo/termo antes de ler arquivos grandes.
+- Pesquise por arquivo, símbolo ou termo antes de ler arquivos grandes.
 - Leia somente as seções necessárias.
-- Faça o menor diff correto; não reescreva sistemas funcionando sem motivo.
-- Limite logs e saídas de terminal ao trecho necessário para diagnosticar.
-- Não repita contexto que já está no repositório.
-- Valide mudanças relevantes executando/testando.
-- Trate documentação `latest` do Godot como potencialmente instável; prefira `stable`.
-- Diferencie: fato de fonte, evidência experimental, heurística comunitária e inferência.
-- Se mais de 3–5 módulos parecerem necessários, reavalie o escopo antes de carregar mais contexto.
+- Comece com 1–3 módulos; se precisar de muitos, reavalie ou divida a tarefa.
+- Faça o menor diff correto.
+- Limite logs ao trecho útil para diagnóstico.
+- Valide mudanças importantes executando/testando.
+- Godot: prefira `docs.godotengine.org/en/stable/`.
+- Diferencie fonte oficial, evidência profissional, comunidade e inferência.
+- Decisões duráveis vão para o repositório.
+
+## Fluxo do estúdio
+`STUDIO_WORKFLOW.md`
 
 ## Roteamento
-- Codex, tokens, contexto, skills, handoffs → `knowledge/codex/index.md`
-- Godot, GDScript, arquitetura, performance → `knowledge/godot/index.md`
-- Game design, sistemas, progressão, economia → `knowledge/game_design/index.md`
-- Pesquisa de jogos/referências/reviews → `knowledge/game_research/index.md`
-- Arte, UI, VFX, shaders, iluminação → `knowledge/visual/index.md`
-- QA, regressão, acessibilidade, performance → `knowledge/qa/index.md`
+- Codex/contexto/tokens → `knowledge/codex/index.md`
+- Godot/arquitetura/GDScript → `knowledge/godot/index.md`
+- Game design → `knowledge/game_design/index.md`
+- Pesquisa de referências → `knowledge/game_research/index.md`
+- Arte/UI/VFX/technical art → `knowledge/visual/index.md`
+- QA/performance/accessibility → `knowledge/qa/index.md`
 
 ## Agentes
 - `agents/game_researcher.md`
@@ -29,5 +32,7 @@ Este arquivo é um **mapa**. Não carregue toda a Knowledge Base.
 - `agents/visual_director.md`
 - `agents/qa_reviewer.md`
 
-## Proveniência
-Fontes e classificação: `sources/SOURCES_INDEX.md`.
+## Proveniência e manutenção
+- `sources/SOURCES_INDEX.md`
+- `sources/INGESTION_PROTOCOL.md`
+- `sources/UPDATE_PROTOCOL.md`
