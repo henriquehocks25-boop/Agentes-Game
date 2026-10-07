@@ -15,6 +15,7 @@
 - `onboarding.md`
 - `level_design.md`
 - `procedural_design.md`
+- `content_strategy.md`
 - `feature_prioritization.md`
 - `retention_ethics.md`
 - `living_gdd.md`
