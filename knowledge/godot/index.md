@@ -25,6 +25,7 @@ Registrar versão quando comportamento/API for sensível.
 - `shaders.md`
 - `particles_vfx.md`
 - `rendering.md`
+- `ascii_native_rendering.md`
 - `audio.md`
 - `memory_management.md`
 - `testing.md`
