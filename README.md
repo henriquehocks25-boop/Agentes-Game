@@ -2,24 +2,40 @@
 
 Knowledge Base modular para um **AI Game Studio** operado por agentes Codex, com foco em criação de jogos completos e polidos em Godot.
 
-## Objetivo
-Transformar fontes confiáveis em conhecimento compacto, versionado e recuperável sob demanda. A KB existe para aumentar qualidade sem inflar desnecessariamente o contexto do agente.
-
-## Agentes-alvo
+## Agentes
 1. Game Researcher / Reference Analyst
 2. Game Director / Designer
 3. Godot Lead
 4. Visual Director / Technical Artist
 5. QA / Reviewer
 
-## Princípios
-- Fonte primária primeiro.
-- Godot: usar documentação **stable 4.x** como canônica.
-- `AGENTS.md` é um roteador curto, não uma enciclopédia.
-- Progressive disclosure: carregar só o módulo necessário.
-- Separar fato, evidência experimental, heurística e inferência.
-- Evitar duplicação e conteúdo tutorial básico.
-- Registrar versão, data, confiança e proveniência.
-- Testar a KB com evals reais de qualidade e custo.
+Fluxo recomendado: `Researcher → Director → Godot Lead ↔ Visual Director → QA`.
 
-Veja `AGENTS.md`, `sources/SOURCES_INDEX.md` e `sources/INGESTION_PROTOCOL.md`.
+Veja `STUDIO_WORKFLOW.md`.
+
+## Como a KB funciona
+- `AGENTS.md` é o router global.
+- Cada domínio possui um `index.md`.
+- O agente carrega somente os módulos necessários.
+- Fontes primárias têm prioridade.
+- Godot usa documentação **4.x stable** como base.
+- Fatos, heurísticas e inferências não devem ser misturados.
+- Decisões duráveis ficam no repositório; histórico de conversa não é a memória principal.
+- Evals medem qualidade e custo antes de expandir instruções.
+
+## Pastas
+- `agents/` — perfis dos cinco agentes.
+- `knowledge/codex/` — contexto, tokens, skills, routing e evals.
+- `knowledge/godot/` — arquitetura e implementação Godot.
+- `knowledge/game_design/` — direção e systems design.
+- `knowledge/game_research/` — análise de referências.
+- `knowledge/visual/` — art direction, UI, VFX e technical art.
+- `knowledge/qa/` — estratégia de QA.
+- `sources/` — proveniência, ingestão e atualização.
+- `evals/` — benchmarks e scorecards.
+
+## Regra de contexto
+Comece com o router e 1–3 módulos relevantes. Expanda somente quando houver uma lacuna concreta.
+
+## Pesquisa
+A síntese e as correções da pesquisa-base estão em `sources/RESEARCH_SYNTHESIS_2026-10-07.md`.
