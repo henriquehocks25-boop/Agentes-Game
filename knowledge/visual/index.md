@@ -14,10 +14,12 @@
 - `materials_textures.md`
 - `vfx.md`
 - `procedural_art.md`
+- `noise_sdf.md`
 - `post_processing.md`
 - `animation_motion.md`
 - `technical_art_performance.md`
 
 ## Regra
 `art bible → implementação → render/capture → inspeção → crítica → refinamento`.
+
 Código correto não prova qualidade visual.
