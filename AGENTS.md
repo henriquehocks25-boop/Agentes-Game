@@ -14,10 +14,18 @@ Este arquivo é um mapa. Não carregue toda a Knowledge Base.
 - Diferencie fonte oficial, evidência profissional, comunidade e inferência.
 - Decisões duráveis vão para o repositório.
 
-## Fluxo do estúdio
-`STUDIO_WORKFLOW.md`
+## Agentes operacionais do Codex
+Repo-local skills em `.codex/skills/`:
+- `$forja-batedor` — pesquisa e referências.
+- `$forja-diretor` — game design e escopo.
+- `$forja-construtor` — Godot e implementação.
+- `$forja-artista` — direção visual e technical art.
+- `$forja-guardiao` — QA e validação.
+- `$forja-estudio` — orquestra o pipeline completo.
 
-## Roteamento
+Use a skill específica quando a tarefa for de um domínio. Use `$forja-estudio` somente quando a tarefa realmente atravessar múltiplos papéis.
+
+## Roteamento da KB
 - Codex/contexto/tokens → `knowledge/codex/index.md`
 - Godot/arquitetura/GDScript → `knowledge/godot/index.md`
 - Game design → `knowledge/game_design/index.md`
@@ -25,12 +33,11 @@ Este arquivo é um mapa. Não carregue toda a Knowledge Base.
 - Arte/UI/VFX/technical art → `knowledge/visual/index.md`
 - QA/performance/accessibility → `knowledge/qa/index.md`
 
-## Agentes
-- `agents/game_researcher.md`
-- `agents/game_director.md`
-- `agents/godot_lead.md`
-- `agents/visual_director.md`
-- `agents/qa_reviewer.md`
+## Documentos principais
+- `STUDIO_WORKFLOW.md`
+- `REPO_MAP.md`
+- `DO_NOT.md`
+- `.codex/README.md`
 
 ## Proveniência e manutenção
 - `sources/SOURCES_INDEX.md`
