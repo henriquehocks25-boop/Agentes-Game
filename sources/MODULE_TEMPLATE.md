@@ -5,6 +5,7 @@ tags: []
 source_urls: []
 source_type: ""
 source_priority: ""
+evidence_class: ""
 godot_version: ""
 last_verified: ""
 confidence: ""
