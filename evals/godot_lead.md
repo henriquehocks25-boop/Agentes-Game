@@ -13,12 +13,18 @@
 - comportamento correto;
 - arquitetura proporcional;
 - arquivos/módulos lidos;
+- skills/plugins externos carregados;
+- fontes oficiais adicionais consultadas;
 - diff;
 - validação;
-- ausência de regressão.
+- número de correções após primeira execução;
+- ausência de regressão;
+- distinção correta entre teste automatizado e playtest humano.
 
 ## Falhas graves
 - mudar versão da engine sem pedido;
 - giant manager desnecessário;
 - optimization sem measurement;
-- docs/API de Godot 3 usadas como Godot 4.
+- docs/API de Godot 3 usadas como Godot 4;
+- declarar teste manual humano sem tê-lo realizado;
+- depender de skill externa não solicitada sem registrar sua influência no benchmark.
