@@ -15,8 +15,9 @@
 - `onboarding.md`
 - `level_design.md`
 - `procedural_design.md`
+- `feature_prioritization.md`
 - `retention_ethics.md`
 - `living_gdd.md`
 
 ## Regra
-Toda feature responde: qual pilar serve, qual decisão cria, qual loop alimenta, qual feedback oferece e qual custo de conteúdo/produção adiciona.
+Toda feature responde: qual pilar serve, qual decisão cria, qual loop alimenta, qual feedback produz e qual custo de produção/conteúdo adiciona.
