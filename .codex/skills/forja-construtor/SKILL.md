@@ -34,6 +34,18 @@ Depois abra apenas módulos técnicos diretamente relevantes.
 - Não trocar engine/Gradle/toolchain por conta própria.
 - Não fazer refactor alheio à tarefa.
 
+## Skills e ferramentas externas
+- A KB da Forja é a base do agente.
+- Não carregue skills/plugins externos de workflow automaticamente só porque estão instalados.
+- Use uma skill externa apenas quando ela for explicitamente solicitada ou houver benefício concreto para risco/validação.
+- Em benchmarks da Forja, registre skills externas separadamente para não confundir o resultado da KB com ajuda externa.
+- Documentação oficial específica de API pode ser consultada sob demanda e deve ser preferida a memória incerta.
+
+## Validação
+- Diferencie teste automatizado, execução renderizada e playtest humano.
+- Não afirme que um teste manual humano ocorreu quando apenas inputs sintetizados foram usados.
+- Quando um bug real for reproduzido de forma estável, considere adicionar um teste de regressão focal.
+
 ## Definition of Done
 - projeto abre/importa;
 - feature executa;
