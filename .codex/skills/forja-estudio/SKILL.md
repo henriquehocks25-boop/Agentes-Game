@@ -71,5 +71,18 @@ Não avance se:
 - pipeline de conteúdo/performance é inviável;
 - contexto virou histórico em vez de informação ativa.
 
+## Protocolo de sessão longa
+Se ocorrer compaction automática:
+1. atualize/releia `FORJA_STATE.md`;
+2. não reabra o projeto inteiro;
+3. continue somente pelos critérios restantes do milestone ativo.
+
+Depois de duas fases grandes na mesma execução, prefira encerrar no próximo checkpoint limpo em vez de iniciar uma nova fase pesada. Deixe um handoff e um comando de retomada.
+
+Se uma ferramenta sinalizar limite/uso próximo ou impedir novas ações, a prioridade é preservar estado reproduzível, não tentar uma última expansão.
+
 ## Saída de cada fase
 Feito, evidência, arquivos, riscos, próximo passo. Nada de recontar a sessão inteira.
+
+## Gate
+Use `evals/studio_orchestrator.md` para milestones longos.
