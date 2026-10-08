@@ -2,6 +2,7 @@
 
 ## P0
 - `art_direction.md`
+- `visual_contract.md`
 - `composition_hierarchy.md`
 - `lighting_color_values.md`
 - `critique_loop.md`
