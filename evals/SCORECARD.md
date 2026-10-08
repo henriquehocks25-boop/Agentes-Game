@@ -16,6 +16,14 @@ Pontue 0–4 por item.
 - Regression risk
 - Test/build evidence
 
+## Production / independent review
+- Project contract compatibility (APIs, assets, renderer, save schema)
+- Real artifact produced vs only explanation
+- Independent reviewer consulted
+- Runtime evidence and evidence honesty
+- Basic / intermediate / advanced skill demonstrably applied
+- Time/context cost vs quality gained
+
 ## Visual
 - Hierarchy
 - Readability
@@ -24,6 +32,10 @@ Pontue 0–4 por item.
 - Consistency
 - Identity
 - Performance
+- Target-fit 0–4 (explicit MUST-HAVE/MUST-NOT)
+- Asset quality 0–4 (shape, materials, authorship, animation)
+- Readability 0–4 at actual game size
+- Source/editable asset and rendered before/after
 
 ## Design
 - Pillar alignment
