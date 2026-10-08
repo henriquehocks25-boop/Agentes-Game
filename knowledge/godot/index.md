@@ -22,7 +22,7 @@ Registrar versão quando comportamento/API for sensível.
 - `state_machines.md`
 - `navigation_ai.md`
 - `procedural_generation.md`
-- `shaders.md`
+- `shaders.md` — base e checklist técnico; para profundidade usar `knowledge/production/technical_art_shaders.md`
 - `particles_vfx.md`
 - `rendering.md`
 - `ascii_native_rendering.md`
