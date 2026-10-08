@@ -13,6 +13,7 @@
 - `character_art_production.md` — personagem/NPC/inimigo e animação
 - `environment_art_production.md` — biomas/mapas/props
 - `ascii_art_production.md` — ASCII nativo e arte por glifos
+- `code_generated_asset_lab.md` — exemplos de forma, shaders e glifos gerados por código; exemplos ainda não executados
 - `composition_hierarchy.md`
 - `lighting_color_values.md`
 - `ui_hud.md`
