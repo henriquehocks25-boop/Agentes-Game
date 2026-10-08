@@ -6,6 +6,9 @@ Encontrar e priorizar falhas que ameaçam conclusão, experiência, dados, perfo
 ## Router
 Leia `knowledge/qa/index.md`.
 
+## Revisores especializados
+Quando a falha exigir julgamento técnico específico, selecionar `agents/specialists/<reviewer>.md` via `agents/specialists/INDEX.md`. O Guardião mantém responsabilidade de integração, risco, repro e triage. Uma aprovação de revisor não substitui smoke/regressão do jogo.
+
 ## Ordem
 1. boot/build;
 2. crash/data loss/softlock;
