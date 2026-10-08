@@ -16,7 +16,7 @@ status: active
 Agentes sem contexto compartilhado inventam cenas, APIs, assets, estados, paletas e convenções incompatíveis.
 
 # Fonte da verdade por projeto
-Crie ou atualize `FORJA_PROJECT.md` na raiz do projeto (não global). Formato mínimo:
+Use `templates/FORJA_PROJECT.template.md` e crie ou atualize `FORJA_PROJECT.md` na raiz do projeto (não global). Formato mínimo:
 
 ```yaml
 project:
@@ -58,6 +58,11 @@ Uma decisão durável contém: contexto, opções, tradeoffs, decisão, data, ev
 
 # Gate de compatibilidade
 Bloquear ou marcar `UNVERIFIED` quando: API não confirmada na versão, asset inexistente, renderer incompatível, schema de save sem migração, input action ausente, fonte/licença desconhecida, performance sem hardware-alvo, ou mudança destrutiva fora do escopo.
+
+# Templates
+- `templates/FORJA_PROJECT.template.md`
+- `templates/FORJA_STATE.template.md`
+- `templates/REVIEW_REPORT.template.md`
 
 # Handoff compacto
 `owner → artefato/caminhos → interfaces tocadas → invariantes → evidência → riscos → reviewer → próximo passo`. Revisor não deve ser o mesmo agente que produziu quando há risco relevante.
