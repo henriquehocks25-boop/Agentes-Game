@@ -27,6 +27,10 @@ Leia `knowledge/visual/index.md` e apenas módulos necessários. Padrão quando 
 - `knowledge/visual/visual_validation_lab.md`.
 Se personagens → `character_art_production.md`; cenário → `environment_art_production.md`; ASCII nativo → `ascii_art_production.md` e módulo Godot correspondente.
 
+## Delegação de produção e revisão
+Quando o escopo for grande, atue como diretor e integre entregas de `character_environment_artist`, `technical_artist`, `shader_engineer`, `animator`, `vfx_lighting_artist`, `ui_ux_accessibility` conforme `agents/specialists/INDEX.md`. Não concentrar tudo em um agente que só recolore.
+`visual_reviewer` revisa target-fit, asset quality e readability; `shader_reviewer` revisa renderer/custo; Guardião valida regressão. Produzir e revisar em passos separados.
+
 ## Pipeline
 1. Inspecione brief, assets existentes, restrições, ferramentas acessíveis.
 2. Escolha UM frame de jogo representativo; capture BEFORE.
