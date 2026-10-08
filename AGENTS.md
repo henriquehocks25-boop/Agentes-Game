@@ -13,6 +13,9 @@ Este arquivo é um mapa. Não carregue toda a Knowledge Base.
 - Godot: prefira `docs.godotengine.org/en/stable/`.
 - Diferencie fonte oficial, evidência profissional, comunidade e inferência.
 - Decisões duráveis vão para o repositório.
+- Tarefa longa deve ser dividida em milestones; não tente consumir design + código + arte + QA + conteúdo em um único contexto.
+- Ao fechar uma fase, registre estado e handoff curto antes de avançar ou compactar contexto.
+- Prove um exemplo representativo antes de multiplicar conteúdo.
 
 ## Agentes operacionais do Codex
 Repo-local skills em `.codex/skills/`:
