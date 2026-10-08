@@ -1,40 +1,55 @@
 ---
 title: "Visual Critique Loop"
 domain: visual
-tags: [critique, screenshot, iteration, quality]
+tags: [critique, screenshot, iteration, quality, target-fit]
 source_urls:
   - https://gdcvault.com/
 source_type: professional-derived
 source_priority: P0
 last_verified: 2026-10-07
 confidence: high
-token_budget: 850
+token_budget: 900
 status: stable
 ---
 
 # Loop obrigatório
-`brief → implementar → executar → capturar → avaliar → priorizar → refinar → recapturar`.
+`brief/Visual Contract → implementar → executar → capturar → avaliar → priorizar → refinar → recapturar`.
 
-# Rubrica 0–4
+# Dois eixos
+Avalie separadamente:
+
+## Quality 0–4
 - focal point;
 - player/enemy readability;
 - hierarchy;
 - values;
-- palette;
 - depth;
 - lighting;
 - materials;
-- shape language;
 - UI;
 - VFX;
-- identity;
-- consistency;
 - technical cleanliness.
 
-0 = quebrado/ausente; 2 = funcional/genérico; 4 = intencional/coerente/produção.
+## Target-fit 0–4
+- paleta pedida;
+- identidade;
+- shape/material language;
+- MUST-HAVE presentes;
+- MUST-NOT ausentes;
+- gênero/direção reconhecíveis sem explicação.
+
+0 = quebrado/contraditório; 2 = funcional/genérico/parcial; 4 = intencional/coerente/produção.
 
 # Regra
 Priorize 1–3 falhas de maior impacto por rodada.
 
-# Anti-pattern
-Aprovar visual sem olhar frame/render real.
+Uma cena com quality 3 e target-fit 1 não passou.
+
+# Capturas
+Prefira BEFORE + primeira passada + AFTER da cena representativa. Só capture telas adicionais quando elas testarem um problema diferente.
+
+# Anti-patterns
+- aprovar sem render real;
+- confundir mais cor/efeitos com aderência ao brief;
+- revisar muitas telas antes de corrigir a principal;
+- usar texto/HUD para compensar cenário visualmente genérico.
