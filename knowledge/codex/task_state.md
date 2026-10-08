@@ -8,25 +8,36 @@ source_type: derived
 source_priority: D
 last_verified: 2026-10-07
 confidence: high
-token_budget: 450
+token_budget: 550
 status: stable
 ---
 
 # Quando usar
-Tarefa longa com múltiplas etapas ou troca de sessão/agente.
+Tarefa longa, múltiplos agentes, múltiplos milestones ou troca de sessão.
 
-# Conteúdo
-- objetivo atual;
-- critérios de conclusão;
-- arquivos em foco;
-- decisões já tomadas;
-- blockers;
-- próximo passo.
+# Formato mínimo
+```md
+# FORJA STATE
+Milestone:
+Objetivo:
+Concluído:
+Critérios restantes:
+Arquivos em foco:
+Decisões:
+Blockers:
+Próximo agente/passo:
+```
 
-# Regra
-Estado de tarefa é temporário. Decisões duráveis devem migrar para documentação estável.
+# Regras
+- curto o bastante para ser relido no início de cada fase;
+- caminhos e símbolos exatos, não narrativa;
+- atualizar antes de compaction/troca de agente;
+- decisões duráveis migram para docs estáveis;
+- remover/arquivar quando o projeto não precisar mais desse estado operacional.
 
 # Anti-patterns
 - diário completo;
-- copiar toda conversa;
-- manter TASK.md após tarefa encerrada sem motivo.
+- copiar conversa;
+- colar logs;
+- registrar cada arquivo irrelevante;
+- estado desatualizado que contradiz o projeto.
