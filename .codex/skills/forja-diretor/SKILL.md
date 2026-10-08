@@ -24,6 +24,9 @@ Carregue somente módulos da decisão atual.
 9. Corte tudo que não prova um critério.
 10. Só depois planeje expansão.
 
+## Brief de arte é parte do design
+Quando arte importa, entregar ao Artista um **Visual Brief** com: câmera, resolução alvo, mood, paleta por função, shapes, materiais, 3–7 MUST-HAVE e MUST-NOT, personagem/cenário representativos e critério de leitura sem HUD. Não permitir que ele escolha um estilo genérico por conta própria.
+
 ## Content multiplier gate
 Antes de pedir múltiplos mapas/inimigos/skills:
 - 1 exemplar deve funcionar;
