@@ -3,8 +3,9 @@
 - `AGENTS.md` — router global.
 - `STUDIO_WORKFLOW.md` — fluxo entre os cinco agentes.
 - `DO_NOT.md` — anti-patterns globais.
-- `agents/` — contratos de cada agente.
+- `agents/` — contratos dos cinco coordenadores e `agents/specialists/` com especialistas/revisores independentes.
 - `knowledge/codex/` — contexto e eficiência.
+- `knowledge/production/` — competências profissionais, procedimentos por domínio, contrato de projeto e evidência.
 - `knowledge/godot/` — implementação Godot.
 - `knowledge/game_design/` — direção de jogo.
 - `knowledge/game_research/` — análise de referências.
