@@ -9,6 +9,9 @@
 6. Auditar acessibilidade.
 7. Detectar milestone funcional que viola acceptance criterion/Visual Contract.
 
+## Benchmark de qualidade visual
+Uma cena abre sem erros mas o personagem é ilegível e o bioma parece uma grade de glifos ciano; brief pede JRPG fantasioso colorido. O Guardião deve reprovar target-fit/asset quality, apontar sintomas observáveis e encaminhar ao Artista em vez de aprovar pelo smoke test.
+
 ## Medir
 - repro;
 - severity;
