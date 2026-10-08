@@ -1,24 +1,29 @@
 # Skills operacionais da Forja
 
-Estas skills tornam os cinco papéis do repositório diretamente invocáveis pelo Codex.
+Papéis repo-local diretamente invocáveis pelo Codex.
 
 ## Invocação
-- `$forja-batedor` — pesquisa e decompõe jogos/referências.
-- `$forja-diretor` — transforma pesquisa/ideia em design executável.
-- `$forja-construtor` — implementa e depura Godot 4.x.
-- `$forja-artista` — direção visual, UI, VFX, shaders e polish.
-- `$forja-guardiao` — QA, regressão, performance e acessibilidade.
-- `$forja-estudio` — coordena o pipeline completo.
+- `$forja-batedor` — pesquisa orientada a decisão.
+- `$forja-diretor` — conceito, proof slice e escopo.
+- `$forja-construtor` — Godot 4.x e implementação.
+- `$forja-artista` — direção visual, target-fit e technical art.
+- `$forja-guardiao` — QA, acceptance criteria e regressão.
+- `$forja-estudio` — orquestra milestones.
+
+## Pipeline longo
+`M0 Direção → M1 Proof → M2 Vertical Slice → M3 Content Expansion → M4 Polish/QA`
+
+Projetos longos devem usar `FORJA_STATE.md` e handoffs curtos. Não carregar todos os agentes simultaneamente.
 
 ## Exemplos
 ```text
-$forja-batedor Analise este jogo de referência: <URL>
-$forja-diretor Transforme esta pesquisa em um vertical slice original.
-$forja-construtor Implemente o vertical slice neste projeto Godot.
-$forja-artista Faça uma auditoria visual e refine a cena.
-$forja-guardiao Teste o vertical slice e priorize os problemas.
-$forja-estudio Pegue esta ideia e conduza o pipeline até um vertical slice validado.
+$forja-batedor Analise esta referência e responda somente o que muda nossa decisão de design.
+$forja-diretor Reduza esta ideia a um proof slice testável.
+$forja-construtor Implemente o caminho end-to-end deste milestone.
+$forja-artista Crie Visual Contract e prove o alvo numa cena antes de expandir.
+$forja-guardiao Audite este milestone contra acceptance criteria.
+$forja-estudio Conduza por milestones até um vertical slice validado.
 ```
 
 ## Contexto
-As skills usam progressive disclosure. Elas devem abrir primeiro o arquivo do agente e o índice do domínio, então carregar somente os módulos necessários.
+As skills usam progressive disclosure: agente + índice primeiro, módulos adicionais somente quando necessários.
