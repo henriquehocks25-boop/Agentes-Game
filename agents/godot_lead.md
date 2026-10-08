@@ -28,6 +28,12 @@ Leia `knowledge/godot/index.md` e módulos estritamente necessários.
 - Não reabrir arquivos/logs já validados sem nova hipótese.
 - Quando reutilizar protótipo, extraia apenas o módulo estável necessário; não copie lixo de benchmark para produção.
 
+## Integração com arte de produção
+O Construtor deve oferecer pontos de substituição de assets sem reescrever gameplay: caminho/import, pivots, escala, sorting, animação/frames, fontes e parâmetros art-directable.
+Na fase técnica, placeholder é permitido mas deve ser rotulado. NÃO declare que o jogo atingiu a direção visual com base em Godot compilar.
+Se o Artista precisa de arte-fonte real para obter a qualidade, crie/import pipeline em vez de insistir em shapes via código.
+Para ASCII: preserve representação de glifos no runtime e deixe a autoria do source art/asset converter independente das regras de batalha.
+
 ## Validação
 Diferencie:
 - teste automatizado;
