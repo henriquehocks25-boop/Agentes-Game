@@ -72,5 +72,14 @@
 - P0 — https://copyright.gov/help/faq/faq-protect.html
 - P0 — https://www.copyright.gov/comp3/chap700/ch700-literary-works.pdf
 
+## Production knowledge — curated
+- P0 — Godot stable shaders reference: https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
+- P0 — Godot demo projects: https://github.com/godotengine/godot-demo-projects
+- P0 — Steamworks SDK/Cloud/Achievements: https://partner.steamgames.com/doc/sdk ; https://partner.steamgames.com/doc/features/cloud ; https://partner.steamgames.com/doc/features/achievements
+- P1 — The Book of Shaders: https://thebookofshaders.com/
+- P1 — Inigo Quilez procedural articles: https://iquilezles.org/articles/
+- P1 — Game Accessibility Guidelines: https://gameaccessibilityguidelines.com/
+- Bibliografia, referências de jogos e limites de inferência: `knowledge/production/references_and_cases.md`.
+
 ## Manutenção
 Não copiar longos trechos. Armazenar princípios, condições, exceções, exemplos mínimos, versão e URL.
