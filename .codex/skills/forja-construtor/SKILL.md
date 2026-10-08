@@ -1,6 +1,6 @@
 ---
 name: forja-construtor
-description: Implemente, depure, refatore e valide jogos em Godot 4.x com arquitetura proporcional, diffs pequenos e documentação oficial stable. Use para código, cenas, Resources, Signals, física, UI, save, AI, performance e tooling Godot.
+description: Implemente, depure e valide jogos em Godot 4.x com arquitetura proporcional, diffs focais e baixo desperdício de contexto.
 ---
 
 # Construtor — Godot Lead
@@ -12,52 +12,39 @@ Leia:
 3. `knowledge/codex/search_before_read.md`
 4. `knowledge/codex/minimal_diffs.md`
 
-Depois abra apenas módulos técnicos diretamente relevantes.
+Em tarefas longas, consulte também `knowledge/codex/milestone_execution.md`.
 
 ## Workflow
-1. Confirme a versão do projeto sem alterá-la.
-2. Pesquise símbolos, cenas e arquivos antes de ler muito.
-3. Entenda a arquitetura existente.
-4. Defina a menor mudança correta.
-5. Implemente.
-6. Rode/import/parse/teste relevante.
-7. Corrija erros encontrados.
-8. Faça profiling somente quando o problema for performance.
-9. Atualize documentação apenas se uma decisão durável mudou.
+1. Confirme versão.
+2. Pesquise antes de ler.
+3. Defina o menor caminho end-to-end que prova o sistema.
+4. Implemente esse caminho.
+5. Rode/import/teste.
+6. Corrija causa raiz.
+7. Registre estado/handoff.
+8. Só então multiplique variantes/conteúdo.
+9. Profile apenas quando necessário.
 
 ## Regras
-- Godot `/en/stable/` é a referência padrão.
-- Composição antes de hierarquia complexa.
-- Resources para dados; Nodes/Scenes para comportamento.
-- Signals para eventos, não como substituto universal de chamadas.
-- Autoload só para responsabilidade realmente global.
-- Não trocar engine/Gradle/toolchain por conta própria.
-- Não fazer refactor alheio à tarefa.
+- Godot `/en/stable/` é padrão.
+- Não trocar versão/toolchain.
+- Não refatorar área alheia.
+- Não criar um Node por item de alta cardinalidade sem justificativa.
+- Não imprimir logs enormes; salve completo e leia trechos.
+- Não reabrir tudo após cada mudança.
+- Ao reutilizar benchmark/protótipo, copie somente componentes estáveis necessários.
 
-## Skills e ferramentas externas
-- A KB da Forja é a base do agente.
-- Não carregue skills/plugins externos de workflow automaticamente só porque estão instalados.
-- Use uma skill externa apenas quando ela for explicitamente solicitada ou houver benefício concreto para risco/validação.
-- Em benchmarks da Forja, registre skills externas separadamente para não confundir o resultado da KB com ajuda externa.
-- Documentação oficial específica de API pode ser consultada sob demanda e deve ser preferida a memória incerta.
+## Skills externas
+A KB da Forja é base. Não carregue workflow externo automaticamente. Se usar, registre nome e motivo.
 
 ## Validação
-- Diferencie teste automatizado, execução renderizada e playtest humano.
-- Não afirme que um teste manual humano ocorreu quando apenas inputs sintetizados foram usados.
-- Quando um bug real for reproduzido de forma estável, considere adicionar um teste de regressão focal.
+Diferencie automatizado, renderizado, inspeção visual e playtest humano.
 
 ## Definition of Done
-- projeto abre/importa;
-- feature executa;
-- erros relevantes corrigidos;
-- acceptance criteria atendidos;
-- validação registrada;
-- diff focal;
-- riscos restantes declarados.
+Acceptance criteria do milestone atendidos + validação registrada + riscos declarados.
 
 ## Handoff
-Para Artista: cenas/estados visuais, parâmetros disponíveis e limitações técnicas.
-Para Guardião: arquivos alterados, testes rodados, riscos e casos críticos.
+Para Artista/Guardião: arquivos, estados visuais, parâmetros, testes e riscos — curto.
 
 ## Gate
 Use `evals/godot_lead.md`.
