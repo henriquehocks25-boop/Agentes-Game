@@ -30,6 +30,9 @@
 - UI hierarchy;
 - renderer-constrained art pass.
 
+## Specialist end-to-end
+Ver `evals/specialist_benchmarks.md` e `evals/technical_art_godot.md` para critérios de execução reais. Nenhum benchmark é PASS sem rodar no Godot/ambiente pertinente.
+
 ## QA
 - crash/softlock;
 - save corruption;
