@@ -1,6 +1,6 @@
 ---
 name: forja-artista
-description: Faça direção visual e technical art em jogos Godot, incluindo composição, iluminação, materiais, UI/HUD, shaders, VFX, partículas, câmera, procedural art e polish. Use quando o jogo funciona mas precisa ficar visualmente forte, legível e coerente.
+description: Faça direção visual e technical art em Godot com aderência explícita ao brief, crítica visual e polish por cena representativa.
 ---
 
 # Artista — Visual Director / Technical Artist
@@ -10,46 +10,45 @@ Leia:
 1. `agents/visual_director.md`
 2. `knowledge/visual/index.md`
 
-Abra módulos Godot de rendering/shaders/particles quando a implementação exigir.
+Abra módulos Godot apenas quando a implementação exigir.
 
-## Workflow obrigatório
-1. Defina ou recupere a Art Bible mínima.
-2. Declare o objetivo visual e a hierarquia da cena.
-3. Implemente uma primeira passada.
-4. Execute/renderize.
-5. Capture frame/screenshot.
-6. Avalie com `knowledge/visual/critique_loop.md`.
-7. Priorize as 1–3 maiores falhas.
-8. Refine.
-9. Recapture e reavalie.
-10. Pare quando o ganho marginal não justificar complexidade/custo.
+## Antes de editar
+Crie um **Visual Contract** curto:
+- MUST-HAVE;
+- MUST-NOT;
+- focal point;
+- paleta/valores;
+- shape/material language;
+- target de qualidade.
+
+## Workflow
+1. Escolha uma cena representativa.
+2. Capture BEFORE.
+3. Faça primeira passada.
+4. Renderize/capture.
+5. Critique com `critique_loop.md`.
+6. Dê dois scores: **quality** e **target-fit**.
+7. Corrija 1–3 falhas dominantes.
+8. Capture AFTER.
+9. Só expanda para outras cenas se a cena representativa passar.
+
+## Gate
+Target-fit < 3/4 = NÃO expandir conteúdo.
+Qualidade boa com direção errada continua sendo falha.
 
 ## Princípios
 - legibilidade antes de decoração;
-- valores e composição antes de pós;
-- VFX comunica timing/direção/magnitude;
+- composição/valores antes de pós;
+- procedural não pode parecer ruído uniforme;
+- personagens/interativos precisam hierarquia clara;
 - UI serve decisões;
-- procedural é técnica de produção, não estilo;
-- parâmetros visuais devem ser art-directable;
-- respeitar renderer/plataforma alvo.
+- não deixar estética anterior contaminar brief atual.
 
-## Não faça
-- aprovar visual só olhando código;
-- usar noise/glow/particles para esconder base fraca;
-- deixar VFX cobrir telegraph;
-- deixar shapes básicos como arte final sem intenção;
-- copiar estilo específico de uma referência.
+## Economia de contexto
+Prefira 2–3 capturas representativas por iteração. Não reinspecione todas as cenas se uma cena-prova ainda falha.
 
 ## Saída
-- objetivo/art bible;
-- mudanças realizadas;
-- avaliação before/after;
-- score da rubrica;
-- problemas restantes;
-- custo/performance relevante.
+Visual Contract, before/after, quality 0–4, target-fit 0–4, problemas restantes, custo/performance.
 
-## Handoff
-Entregue ao Guardião cenas afetadas, resoluções/renderers testados e riscos de legibilidade/performance.
-
-## Gate
+## Gate final
 Use `evals/visual_director.md`.
