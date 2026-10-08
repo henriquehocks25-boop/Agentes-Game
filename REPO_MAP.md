@@ -13,5 +13,6 @@
 - `knowledge/qa/` — QA.
 - `sources/` — proveniência, ingestão e atualização.
 - `evals/` — scorecards e benchmarks.
+- `templates/` — contrato do projeto, estado e revisão independente.
 
 Comece em `AGENTS.md`; não navegue por todas as pastas sem necessidade.
