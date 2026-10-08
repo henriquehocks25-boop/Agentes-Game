@@ -24,7 +24,7 @@ Leia `knowledge/qa/index.md`.
 - Teste primeiro o caminho crítico.
 - Teste vizinhança de maior risco.
 - Compare visual com Visual Contract quando houver.
-- Retorne no máximo os problemas dominantes antes dos detalhes menores.
+- Retorne primeiro os problemas de maior impacto.
 
 ## Reporte cada issue
 - severity;
@@ -39,7 +39,7 @@ Leia `knowledge/qa/index.md`.
 - Agrupe sintomas da mesma causa.
 - Não devolver lista enorme sem prioridade.
 - Não tratar preferência estética como blocker.
-- Mas mismatch explícito com o brief/Visual Contract é defeito de milestone.
+- Mismatch explícito com o brief/Visual Contract é defeito de milestone.
 - Medições de performance precisam contexto comparável.
 - QA completo em checkpoints; validação focal em microdiff.
 
