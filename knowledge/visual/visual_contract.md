@@ -7,42 +7,44 @@ source_urls:
 source_type: professional-derived
 source_priority: P0-D
 last_verified: 2026-10-07
-confidence: high
-token_budget: 650
+confidence: medium
+token_budget: 750
 status: stable
 ---
 
 # Quando consultar
-Sempre que o usuário der uma direção visual explícita, referência, paleta, estilo desejado ou coisas que NÃO quer.
+Quando há direção visual explícita, paleta, gênero, referência ou proibições.
 
-# Visual Contract
-Antes da implementação, extraia:
-- **MUST-HAVE**: 3–7 características que precisam ser reconhecíveis no frame;
-- **MUST-NOT**: 3–7 desvios proibidos;
-- focal point;
-- hierarquia de valores/cor;
-- shape/material language;
-- qualidade-alvo.
+# Contrato verificável
+Registre:
+- MUST-HAVE de 3–7 itens reconhecíveis no frame;
+- MUST-NOT de 3–7 desvios;
+- escala/câmera/resolução alvo;
+- silhuetas, cores por função, luz/valores, material e atmosfera;
+- herói/objeto/ambiente representativos;
+- qualidade exigida: prototype vs polished slice.
 
-# Target-fit 0–4
-- 0: contradiz o brief;
-- 1: poucos sinais do alvo;
-- 2: direção parcialmente reconhecível, ainda genérica;
-- 3: alvo claramente reconhecível;
-- 4: alvo claro, coerente e com identidade própria.
+Proibições dadas pelo usuário têm prioridade sobre preferências padrão. Não transportar estética de tarefa anterior.
 
-# Gate
-Não expandir arte/conteúdo se a cena representativa estiver abaixo de 3/4 em target-fit.
+# Eixos separados
+**Target fit:** se corresponde ao estilo desejado.
+**Asset quality:** se personagens/cenários/props parecem desenhados e finalizados.
+**Readability:** se gameplay e hierarquia são claros no tamanho real.
+**Technical:** se import, animação, rendering e FPS estão adequados.
 
-Qualidade técnica e target-fit são eixos diferentes. Um frame bonito na direção errada continua reprovado.
+Todos são avaliados de 0 a 4 com exemplos no `visual_validation_lab.md`.
 
-# Diagnóstico de drift
-Pergunte:
-- a paleta dominante corresponde ao brief?
-- materiais e formas reforçam o alvo?
-- algum estilo anterior contaminou a cena?
-- o usuário reconheceria o pedido sem explicação?
-- o frame depende de HUD/texto para parecer pertencente ao gênero?
+# Gate de vertical slice visual
+Target fit >=3, asset quality >=3 e readability >=3. Nenhum MUST-NOT pode ser violado.
+Se o objetivo for benchmark/placeholder, use gate ajustado e rotule PROVISÓRIO.
 
-# Contexto
-Use uma cena representativa e poucas capturas. Não abra um catálogo de telas antes de resolver a falha dominante.
+# Anti-drift
+Antes de aceitar, compare com o brief:
+- reconhecer o gênero sem HUD?
+- personagens reconhecíveis por forma?
+- ambiente tem materiais e locais distintivos?
+- paleta corresponde às cores pedidas?
+- animação expressiva além de translação?
+- a cena usa um default do agente (neon, teal, grid, circles, glow) que não foi pedido?
+
+Um frame tecnicamente correto mas genérico é insuficiente.
