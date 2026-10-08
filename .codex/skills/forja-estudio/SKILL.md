@@ -37,6 +37,17 @@ Multiplique conteúdo somente depois do proof/vertical slice aprovados.
 ### M4 Polish/QA
 Corrija BLOCKER/CRITICAL/MAJOR e faça regressão focal.
 
+## Production Art Gate
+Para projetos com direção artística exigente, **arte e código têm dois proofs independentes**:
+- Construtor prova gameplay/renderer/import.
+- Artista produz e demonstra asset real: 1 personagem + 1 ambiente + 1 ação, em escala final.
+- Guardião revê as imagens contra o contrato e testa regressão.
+- Só então o Diretor autoriza múltiplos biomas, personagens ou VFX.
+
+Quando o gameplay passou mas a imagem ainda é fraca, o próximo agente deve ser **Artista em asset production**, NÃO Construtor produzindo mais conteúdo.
+
+Se ambiente não dispõe das ferramentas para produzir a arte necessária, registrar impedimento de produção e decidir como resolvê-lo. Não usar "mais scripts" como substituição automática de assets.
+
 ## Estado obrigatório em tarefa longa
 Mantenha `FORJA_STATE.md` no projeto:
 - milestone;
