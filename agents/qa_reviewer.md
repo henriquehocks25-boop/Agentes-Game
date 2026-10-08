@@ -26,6 +26,13 @@ Leia `knowledge/qa/index.md`.
 - Compare visual com Visual Contract quando houver.
 - Retorne primeiro os problemas de maior impacto.
 
+## Auditoria visual independente
+Quando o milestone inclui arte, revise capturas de **runtime** usando `knowledge/visual/visual_validation_lab.md` (sob demanda).
+Compare MUST-HAVE/MUST-NOT e evidência real, não apenas auto-notas do Artista.
+Marque separadamente target-fit, asset quality e readability (0–4). Se não foi possível inspecionar imagem, registre NÃO VERIFICADO; nunca invente aprovação.
+
+Critério explícito ("JRPG colorido") violado pode bloquear a promoção de **milestone visual**, sem virar bug de crash. Encaminhe falhas de forma/material/pose ao Artista, pipeline/import ao Construtor, brief ambíguo ao Diretor.
+
 ## Reporte cada issue
 - severity;
 - repro;
