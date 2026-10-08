@@ -5,51 +5,30 @@ tags: [critique, screenshot, iteration, quality, target-fit]
 source_urls:
   - https://gdcvault.com/
 source_type: professional-derived
-source_priority: P0
+source_priority: P0-D
 last_verified: 2026-10-07
-confidence: high
-token_budget: 900
+confidence: medium
+token_budget: 850
 status: stable
 ---
 
-# Loop obrigatório
-`brief/Visual Contract → implementar → executar → capturar → avaliar → priorizar → refinar → recapturar`.
+# Loop
+`brief → fonte artística → import → executar → captura no tamanho real → diagnóstico → correção → nova captura`.
 
-# Dois eixos
-Avalie separadamente:
+# Evidências
+Não basta capturar arquivo. Inspecione imagem renderizada; verifique 1x, silhueta, grayscale, thumbnail, sem HUD e um frame de ação conforme a tarefa. Use `visual_validation_lab.md` para rubrica e gate.
 
-## Quality 0–4
-- focal point;
-- player/enemy readability;
-- hierarchy;
-- values;
-- depth;
-- lighting;
-- materials;
-- UI;
-- VFX;
-- technical cleanliness.
+# Crítica causal
+Para as 1–3 maiores falhas, escreva:
+- **observação**: "árvore parece ruído por não haver tronco/copa";
+- **causa**: "geração aleatória homogênea sem massas";
+- **intervenção**: "redesenhar copa/tronco e reduzir glifos no chão";
+- **verificação**: "árvore reconhecível em 1x, mesmo sem legenda".
 
-## Target-fit 0–4
-- paleta pedida;
-- identidade;
-- shape/material language;
-- MUST-HAVE presentes;
-- MUST-NOT ausentes;
-- gênero/direção reconhecíveis sem explicação.
+"Adicionar detalhes/partículas/cores" sem causa é correção inválida.
 
-0 = quebrado/contraditório; 2 = funcional/genérico/parcial; 4 = intencional/coerente/produção.
+# Stop / Escalation
+Após 2 iterações sem melhora, mudar método de produção e, se necessário, reportar indisponibilidade de ferramenta. Nunca promover para conteúdo em massa apenas porque o código funciona.
 
-# Regra
-Priorize 1–3 falhas de maior impacto por rodada.
-
-Uma cena com quality 3 e target-fit 1 não passou.
-
-# Capturas
-Prefira BEFORE + primeira passada + AFTER da cena representativa. Só capture telas adicionais quando elas testarem um problema diferente.
-
-# Anti-patterns
-- aprovar sem render real;
-- confundir mais cor/efeitos com aderência ao brief;
-- revisar muitas telas antes de corrigir a principal;
-- usar texto/HUD para compensar cenário visualmente genérico.
+# Score
+Quality, target-fit, asset quality e readability são diagnósticos. Nota >=3 requer evidência concreta; Guardião deve revisar de forma independente.
