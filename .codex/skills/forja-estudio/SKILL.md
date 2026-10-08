@@ -19,6 +19,11 @@ Não carregue cinco agentes completos ao mesmo tempo.
 - visual → `$forja-artista`
 - validação → `$forja-guardiao`
 
+## Especialistas e revisão independente
+Quando o milestone exigir profundidade, ler SOMENTE a tabela `agents/specialists/INDEX.md`, escolher produtor `$forja-especialista` e reviewer `$forja-revisor`. Não ler todos os contratos. `knowledge/production/project_contract.md` impede inventar interfaces; `evidence_protocol.md` define prova real. O Guardião continua responsável pela regressão transversal.
+
+Fluxo: Diretor define critério → especialista produz asset/sistema → reviewer do domínio aprova/reprova → Guardião testa integração → Estúdio decide avançar. Para arte de alta exigência, separar character/environment artist, technical artist, shader, animation e visual reviewer; código funcional não prova arte boa.
+
 ## Pipeline por milestone
 ### M0 Direção
 Diretor define risco central, proof slice e acceptance criteria.
