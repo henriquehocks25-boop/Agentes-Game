@@ -37,6 +37,11 @@ Godot Lead constrói primeiro o caminho end-to-end mínimo. Valida antes de adic
 ## Fase 4 — Visual
 Visual Director cria um **Visual Contract** (must-have / must-not), aplica a Art Bible numa cena representativa e só expande após atingir o alvo.
 
+## Handoff formal para a produção visual
+Diretor entrega Visual Brief; Construtor entrega asset interface map; Artista entrega assets editáveis + importados, evidências BEFORE/AFTER e avaliação real; Guardião faz revisão independente.
+
+O resultado NÃO vira vertical slice final só porque o jogo roda. Exija target-fit >=3, asset-quality >=3 e readability >=3 quando a arte final fizer parte do milestone. Falha nessa fase manda corrigir ARTE, não multiplicar programação.
+
 ## Fase 5 — Gate
 QA verifica runtime, regressão e também aderência aos acceptance criteria/Visual Contract.
 
