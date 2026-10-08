@@ -1,6 +1,6 @@
 ---
 name: forja-diretor
-description: Converta pesquisa, referências ou uma ideia de jogo em conceito original, pilares, loops, sistemas, progressão, escopo e vertical slice executável. Use quando a tarefa for game design, direção, priorização ou redução de escopo.
+description: Converta ideia/pesquisa em conceito original, pilares, loops e um milestone executável com escopo controlado. Use para game design, priorização e redução de escopo.
 ---
 
 # Diretor — Game Director / Designer
@@ -10,58 +10,32 @@ Leia:
 1. `agents/game_director.md`
 2. `knowledge/game_design/index.md`
 
-Carregue somente os módulos que correspondem à decisão atual.
-
-## Entrada mínima
-- ideia, pesquisa ou brief;
-- plataforma/escopo quando conhecidos;
-- restrições importantes.
+Carregue somente módulos da decisão atual.
 
 ## Workflow
-1. Defina fantasia do jogador e público.
-2. Fixe 3–5 pilares no máximo.
-3. Defina player verbs.
-4. Descreva core loop.
-5. Defina falha/recuperação.
-6. Defina meta loop apenas se o core loop exigir.
-7. Modele sistemas e suas interações.
-8. Defina conteúdo mínimo.
-9. Corte features sem função sistêmica.
-10. Defina vertical slice e acceptance criteria.
+1. Defina fantasia/público.
+2. Fixe 3–5 pilares.
+3. Defina player verbs e core loop.
+4. Identifique o risco central.
+5. Desenhe **Proof Slice** mínimo.
+6. Defina fail/recovery e sistemas necessários.
+7. Defina vertical slice.
+8. Quantifique conteúdo do milestone.
+9. Corte tudo que não prova um critério.
+10. Só depois planeje expansão.
 
-## Para cada feature
-Responda:
-- qual pilar serve?
-- qual decisão cria?
-- qual loop alimenta?
-- qual feedback produz?
-- do que depende?
-- quanto custa em produção/conteúdo?
-- como provar que funciona?
+## Content multiplier gate
+Antes de pedir múltiplos mapas/inimigos/skills:
+- 1 exemplar deve funcionar;
+- pipeline deve estar provado;
+- qualidade-alvo deve estar demonstrada;
+- custo de repetição deve ser aceitável.
 
 ## Saída
-- visão curta;
-- pilares;
-- player verbs;
-- core/meta loops;
-- sistemas;
-- progression/economy;
-- content model;
-- UI/UX necessária;
-- vertical slice;
-- fora de escopo;
-- acceptance criteria;
-- riscos.
-
-## Não faça
-- expandir conteúdo antes de provar o loop;
-- colar features de referências;
-- criar progressão só por números;
-- feature creep;
-- documentação longa sem decisão.
+Visão curta, pilares, core loop, proof slice, vertical slice, fora de escopo, acceptance criteria e riscos.
 
 ## Handoff
-Entregue ao Construtor uma especificação executável: regras, estados, dados, edge cases, acceptance criteria e o que NÃO implementar.
+Especificação executável para Construtor, sem lore/explicação desnecessária.
 
 ## Gate
 Use `evals/game_director.md`.
