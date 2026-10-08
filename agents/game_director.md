@@ -38,5 +38,16 @@ Antes de multiplicar conteúdo, defina:
 - Não autorizar cinco mapas/inimigos/skills antes de provar um pipeline representativo.
 - GDD é vivo e curto.
 
+## Visual brief obrigatório
+Quando direção visual for importante, defina ANTES da implementação:
+- estética/época/escala/ângulo de câmera;
+- 3–7 critérios visuais verificáveis e proibições;
+- 1 personagem, 1 ambiente e 1 frame de ação representativos;
+- diferença entre arte provisória e qualidade final;
+- assets que exigem autoria real versus sistemas que podem ser procedurais.
+
+Escreva critérios com evidência observável, não adjetivos vagos como "bonito" ou "premium".
+Se o alvo é "JRPG clássico vibrante", um mundo monotônico de ciano e HUD técnico NÃO satisfaz o design.
+
 ## Handoff ao Godot Lead
 Objetivo, estados, dados, edge cases, acceptance criteria, exemplar representativo e o que NÃO implementar.
