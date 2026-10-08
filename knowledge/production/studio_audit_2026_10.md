@@ -24,3 +24,18 @@ P2: CI, matrizes de hardware, integração Steamworks, testes de usuário, audit
 
 ## Limite honesto
 Esta atualização é de **conhecimento, processos e contratos de agentes**. Não cria assets nem executa Godot; não comprova qualidade profissional do jogo até os benchmarks rodarem.
+
+## Implementado na atualização de 2026-10-08
+- `knowledge/production/`: router, 12 playbooks especializados, matriz de competências, contrato, evidência, referências e auditoria.
+- `agents/specialists/`: 15 contratos de produtores + 12 contratos de revisores + INDEX.
+- `.codex/skills/`: `forja-especialista` e `forja-revisor`; roteamento integrado a AGENTS, Estúdio e Artista.
+- `templates/`: project truth, checkpoint de estado e review report.
+- `evals/`: benchmarks por disciplina, technical art Godot e revisão independente.
+- `knowledge/visual/code_generated_asset_lab.md`: exercícios GDScript/shader/ASCII com status **exemplo não executado**.
+
+## Não realizado / próximos passos
+- Não foi executado benchmark Godot, não foram gerados assets reais nem testada a arte do JRPG; os resultados permanecem `NOT_RUN`.
+- Não houve auditoria exaustiva linha a linha dos módulos antigos, nem validação de todas as URLs de cada playbook.
+- Não foram realizados playtests humanos, benchmarks em GPU-alvo ou Steamworks em conta real.
+- Relatório externo da Pesquisa Aprofundada não foi importado automaticamente; esta entrega é uma atualização técnica incremental baseada no escopo e nas fontes citadas.
+- Próximo passo P0: rodar `evals/artist_ascii_jrpg.md` + `evals/technical_art_godot.md` em projeto isolado e ajustar agentes com base nos resultados.
