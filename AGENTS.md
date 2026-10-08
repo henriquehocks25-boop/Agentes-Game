@@ -25,6 +25,8 @@ Repo-local skills em `.codex/skills/`:
 - `$forja-artista` — direção visual e technical art.
 - `$forja-guardiao` — QA e validação.
 - `$forja-estudio` — orquestra o pipeline completo.
+- `$forja-especialista` — executa UM papel especializado de produção (IA, level, arte 2D/3D, technical art, shader, animação, VFX, áudio, UX, performance, release etc.).
+- `$forja-revisor` — auditoria independente do domínio com evidência, sem aceitar autoavaliação.
 
 Use a skill específica quando a tarefa for de um domínio. Use `$forja-estudio` somente quando a tarefa realmente atravessar múltiplos papéis.
 
@@ -35,6 +37,14 @@ Use a skill específica quando a tarefa for de um domínio. Use `$forja-estudio`
 - Pesquisa de referências → `knowledge/game_research/index.md`
 - Arte/UI/VFX/technical art → `knowledge/visual/index.md`
 - QA/performance/accessibility → `knowledge/qa/index.md`
+- Produção profissional multiárea → `knowledge/production/index.md`
+- Especialistas e revisores → `agents/specialists/INDEX.md`
+
+## Compatibilidade e evidência
+- Projetos longos devem manter `FORJA_PROJECT.md` (contrato verificável) e `FORJA_STATE.md` (estado do milestone).
+- Antes de editar, verificar versão Godot, renderer, cenas, assets, input, schemas e interfaces existentes.
+- Um produtor não autoaprova: revisor independente + Guardião conforme risco.
+- Não confundir KB publicada com benchmark executado ou domínio profissional comprovado.
 
 ## Documentos principais
 - `STUDIO_WORKFLOW.md`
