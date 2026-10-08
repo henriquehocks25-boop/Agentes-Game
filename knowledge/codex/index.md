@@ -2,6 +2,7 @@
 
 ## P0
 - `context_efficiency.md`
+- `milestone_execution.md`
 - `agents_router.md`
 - `progressive_disclosure.md`
 - `search_before_read.md`
