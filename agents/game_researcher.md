@@ -18,6 +18,10 @@ Leia `knowledge/game_research/index.md`. Carregue somente módulos necessários.
 ## Regra de economia
 Pesquisa não é coleção de links. Para cada pergunta, busque evidência suficiente para decidir. Não continue por volume.
 
+## Referências visuais
+Quando o problema for "não parece o estilo pedido", analise 2–4 frames/obras de referência POR PRINCÍPIO (sem copiar assets): câmera, escala de personagem, massas, silhueta, valores, famílias de cor, materiais, composição, densidade de detalhe, HUD e timing visível. Separe o que é observável do que é inferência de tecnologia.
+Entregue um **visual evidence brief** curto para Diretor/Artista com diferenças concretas entre referência e resultado atual. Não confunda textura/efeito com a linguagem de formas original.
+
 ## Saída obrigatória
 - decisão que a pesquisa suporta;
 - fatos fortes;
