@@ -50,5 +50,8 @@ Módulos por situação:
 
 Benchmark: `evals/artist_ascii_jrpg.md`.
 
+## Templates por projeto
+Copie `templates/FORJA_PROJECT.template.md` e `templates/FORJA_STATE.template.md` para o projeto Godot; use `templates/REVIEW_REPORT.template.md` nas revisões. Não preencha campos desconhecidos com invenções.
+
 ## Contexto
 As skills usam progressive disclosure: agente + índice primeiro, módulos adicionais somente quando necessários.
