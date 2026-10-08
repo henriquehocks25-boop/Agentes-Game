@@ -22,6 +22,9 @@ Comece com 1–3 módulos.
 7. Pare por saturação, não por quantidade.
 8. Produza KEEP / IMPROVE / REMOVE / ADD e diferenciação.
 
+## Pesquisa de direção visual
+Se a referência for para produção artística, decomponha frames observáveis em câmera, silhueta, cor/valor, materiais, ambiente, UI e animação. Entregue ao Artista princípios e diferenciação — não uma lista de cores ou instrução para copiar outro jogo.
+
 ## Saída
 Resumo decisório + fontes essenciais. Material bruto fica fora do handoff.
 
