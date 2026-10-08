@@ -19,7 +19,7 @@ Bug reports priorizados, suite executada, reproduções, logs/capturas e caveats
 Repro em ambiente real, smoke export, edge cases, softlocks, distinção human playtest. Executar quando viável; marcar `NOT_RUN` ou `BLOCKED` se não for possível. Evidência segundo `knowledge/production/evidence_protocol.md`.
 
 ## Revisor independente
-`agents/specialists/qa_playtest.md` (triage por Guardião) Produtor não autoaprova milestone; revisor confronta contrato e runtime.
+`agents/qa_reviewer.md` (Guardião faz triage e revisão de QA; quando viável, execução separada)  Produtor não autoaprova milestone; revisor confronta contrato e runtime.
 
 ## Anti-patterns
 Não confundir testes escritos com executados; não classificar gosto pessoal como crash.
