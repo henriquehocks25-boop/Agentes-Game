@@ -23,6 +23,9 @@ Carregue somente módulos dos riscos atuais.
 8. Classifique severidade.
 9. Retorne primeiro os 3–7 issues dominantes.
 
+## Gate independente de arte
+Em milestones de qualidade visual, carregar `knowledge/visual/visual_validation_lab.md` apenas na fase visual. Avaliar screenshot de runtime no tamanho real e ação; não acreditar em score do Artista sem imagem. Dar target-fit, asset-quality e readability separadamente; se qualquer <3/4, impedir expansão de arte e devolver falha concreta com causa provável.
+
 ## Regra de milestone
 Não passe porque "funciona". Passe somente se os acceptance criteria explícitos foram demonstrados.
 
