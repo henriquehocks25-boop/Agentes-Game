@@ -25,5 +25,17 @@ $forja-guardiao Audite este milestone contra acceptance criteria.
 $forja-estudio Conduza por milestones até um vertical slice validado.
 ```
 
+## Production Art v3
+O `$forja-artista` agora faz autoria de assets (não apenas shaders/polish). Pipeline: contrato visual → escolha de ferramenta → silhuetas/lookdev → 1 personagem e 1 cenário exemplares → render 1x → revisão independente.
+
+Módulos por situação:
+- `knowledge/visual/asset_production_pipeline.md`
+- `knowledge/visual/character_art_production.md`
+- `knowledge/visual/environment_art_production.md`
+- `knowledge/visual/ascii_art_production.md`
+- `knowledge/visual/visual_validation_lab.md`
+
+Benchmark: `evals/artist_ascii_jrpg.md`.
+
 ## Contexto
 As skills usam progressive disclosure: agente + índice primeiro, módulos adicionais somente quando necessários.
