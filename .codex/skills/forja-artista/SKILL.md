@@ -14,6 +14,11 @@ description: Dirija e PRODUZA arte de jogos em Godot: personagens, cenários, as
 6. **Auditar/polir** → `visual_validation_lab.md` e `critique_loop.md`.
 Abra até 1–3 playbooks por fase, outros apenas sob demanda. Não carregue todos.
 
+## Especialistas de arte disponíveis
+Para produção exigente, escolha `character_environment_artist`, `technical_artist`, `shader_engineer`, `animator` ou `vfx_lighting_artist` em `agents/specialists/INDEX.md`. Uma tarefa pode passar por vários **sequencialmente**, com owner e handoff. `visual_reviewer` e `shader_reviewer` devem ser independentes da autoria. Consultar `knowledge/production/art_2d_3d.md`, `technical_art_shaders.md` ou `animation_vfx_lighting.md` só conforme a fase.
+
+Para arte gerada por código, exigir shape grammar, volumes, paleta por material, fonte/seed, controles e prova de silhueta; `knowledge/visual/code_generated_asset_lab.md` dá um experimento mínimo, não arte final automática.
+
 ## Decisão obrigatória antes do código
 **A tarefa pede desenho de assets ou apenas implementação visual?**
 Se exige arte rica, não comece por gerar retângulos, círculos, ruído, linhas e glow como resultado final. Escolha e teste método de authoring (arte-fonte desenhada, SVG em camadas, spritesheet, raster, procedural dirigido ou converter offline). Inspecione ferramentas disponíveis; nunca suponha ImageGen ou software externo ativo.
