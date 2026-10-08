@@ -40,6 +40,9 @@ A KB da Forja é base. Não carregue workflow externo automaticamente. Se usar, 
 ## Validação
 Diferencie automatizado, renderizado, inspeção visual e playtest humano.
 
+## Handoff de produção visual
+Se o jogo tem assets e o Artista será acionado, entregar um **asset interface map** compacto: quais cenas expõem sprite/matriz/frames/pivot/material, onde estão os imports/conversores, como substituir visual sem alterar combate, e quais testes de regressão devem passar. Rotule placeholder como provisório.
+
 ## Definition of Done
 Acceptance criteria do milestone atendidos + validação registrada + riscos declarados.
 
