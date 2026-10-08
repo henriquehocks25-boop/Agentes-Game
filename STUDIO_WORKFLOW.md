@@ -25,6 +25,15 @@ Só multiplicar mapas, inimigos, habilidades e assets depois de M1/M2 provarem p
 ### M4 — Polish / QA
 BLOCKER/CRITICAL/MAJOR corrigidos e regressão focal.
 
+## Especialização sob demanda e revisão cruzada
+O fluxo de cinco papéis continua como coordenação. Para trabalhos de maior risco, selecionar UM produtor e UM revisor da tabela `agents/specialists/INDEX.md`:
+
+`Batedor (referências) → Diretor (critérios) → especialista produtor (artefato) → revisor independente (gate do domínio) → Guardião (regressão transversal) → Estúdio (milestone)`.
+
+Exemplos: `technical_artist → shader_reviewer + visual_reviewer`; `gameplay_engineer → code_reviewer → QA`; `ai_engineer → ai_reviewer`; `audio_designer → audio_reviewer`; `release_engineer → release_reviewer`. Nunca acionar todos simultaneamente.
+
+Antes da produção, confirmar `FORJA_PROJECT.md` ou registrar campos desconhecidos; usar `knowledge/production/project_contract.md`. Cada especialista entrega artefatos, não apenas parecer. Evidência obrigatória em `knowledge/production/evidence_protocol.md`. Revisores podem devolver FAIL/NOT_RUN sem alterar o produto silenciosamente.
+
 ## Fase 1 — Descoberta
 Researcher investiga apenas o necessário para decisões atuais. Pare quando houver saturação suficiente; não pesquise por volume.
 
