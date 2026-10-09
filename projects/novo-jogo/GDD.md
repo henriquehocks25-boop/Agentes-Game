@@ -1,7 +1,7 @@
-# GDD v0.3 — RPG de Sobrevivência e Construção (2D Isométrico)
+# GDD v0.4 — RPG de Sobrevivência e Construção (2D Isométrico)
 
 **Estado:** M0 — direção parcialmente confirmada, outras decisões abertas.
-**CONFIRMADO pelo usuário:** jogo de **sobrevivência + construção + RPG**, em **2D isométrico**, com **combate em tempo real**. O **estilo gráfico permanece a definir**, sem escolha antecipada de pixel art, desenho, pintura etc.
+**CONFIRMADO pelo usuário:** jogo de **sobrevivência + construção + RPG**, em **2D isométrico**, com **combate em tempo real**. O **estilo visual está CONFIRMADO: Pixel Art detalhada, com atmosfera levemente dark**. A direção é sombria na medida certa, sem sacrificar cores, leitura e detalhes.
 **PROPOSTO** significa hipótese de design não aprovada. **TBD** significa decisão aberta.
 
 ## 1. Visão
@@ -13,7 +13,14 @@ A experiência é híbrida:
 - **RPG:** desenvolver o personagem por meio de experiências, escolhas de habilidades e objetivos no mundo.
 
 **Representação visual confirmada:** **2D isométrico**, com sprites/cenários 2D que simulam profundidade por projeção, sobreposição e ordenação. Não escolher pipeline 3D nem rotular como 2.5D sem outra decisão explícita.
-**Nome, tema, paleta, estilo artístico, narrativa, plataforma, Godot exato, classes, armas, habilidades e regras específicas de combate:** TBD. O **tipo de combate (tempo real)** já está confirmado.
+**Nome, tema, paleta específica, densidade/resolução dos pixels, narrativa, plataforma, Godot exato, classes, armas, habilidades e regras específicas de combate:** TBD. O **tipo de combate (tempo real)** já está confirmado.
+
+## 1.1 Identidade visual confirmada
+- Técnica: **Pixel Art 2D isométrica**, pixelagem intencional consistente em personagens, ambiente, estruturas e efeitos.
+- Tratamento: **bem detalhado**, com silhuetas trabalhadas, riqueza de materiais e acabamento; não confundir com textura ruidosa que prejudica a leitura.
+- Atmosfera: **ligeiramente sombria (dark)**, com sombras e luz local que sustentem o clima, sem ficar totalmente escura, dessaturada ou ilegível.
+- Pixel size, resolução, dimensão da tile, paleta e ambientação narrativa: **TBD**.
+- Contrato e primeiro exemplar artístico: [ART_DIRECTION.md](ART_DIRECTION.md).
 
 ## 2. Pilares — propostas
 1. **Exploração recompensadora:** arriscar-se fora do abrigo traz materiais e progresso relevante.
@@ -86,7 +93,7 @@ Sistemas:
 Nenhum teste foi realizado nesta fase documental.
 
 ## 7. M2 — Vertical slice proposto
-- Arte 2D isométrica representativa em **uma** região; HUD final representativa.
+- **Pixel Art isométrica detalhada e levemente dark** representativa em **uma** região; sprites, materiais, luz/sombra, HUD e feedback legíveis em escala real.
 - Uma construção adicional com função distinta, uma melhoria de personagem adicional e progresso do objetivo.
 - Inventário/crafting refinado, feedback de interação e salvamento simples.
 - Refinamento do combate em tempo real confirmado, com apenas uma variação significativa de ameaça ou habilidade **se o primeiro confronto passar pelo gate**.
@@ -102,7 +109,7 @@ Nenhum teste foi realizado nesta fase documental.
 
 ## 9. Pendências de direção
 - **D001 — CONFIRMADA:** visualização 2D isométrica.
-- **D002 — CONFIRMADO COMO INDEFINIDO:** estilo de arte permanece **TBD**, sem assumir pixel art, ilustração, pintura, paleta ou material.
+- **D002 — CONFIRMADA:** **Pixel Art detalhada, um pouco dark**, 2D isométrica. Paleta exata, tamanho do pixel e referências específicas ainda **TBD**.
 - **D003 — EM ABERTO:** ambientação e tom (fantasia, medieval, pós-apocalíptico, natureza etc.).
 - **D004 — EM ABERTO:** plataforma, Godot exato, resolução e controles.
 - **D005 — PROPOSTO:** fogueira/frio como primeiro loop; usuário ainda não aprovou.
