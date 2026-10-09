@@ -1,4 +1,4 @@
-# GDD v0.6 — RPG de Sobrevivência e Construção (2D Isométrico)
+# GDD v0.7 — RPG de Sobrevivência e Construção (2D Isométrico)
 
 **Estado:** M0 — direção parcialmente confirmada, outras decisões abertas.
 **CONFIRMADO pelo usuário:** jogo de **sobrevivência + construção + RPG**, em **2D isométrico**, com **combate em tempo real**. O **estilo visual está CONFIRMADO: Pixel Art detalhada, com atmosfera levemente dark**. A direção é sombria na medida certa, sem sacrificar cores, leitura e detalhes.
@@ -8,7 +8,7 @@
 - **Fantasia medieval**, com **florestas misteriosas, ruínas antigas, vilarejos e criaturas** como elementos centrais do mundo.
 - **CONTRATO:** [WORLD_DESIGN.md](WORLD_DESIGN.md) organiza a ambientação confirmada e propostas de função de cada lugar/elemento.
 - **Magia CONFIRMADA:** rara e misteriosa, associada a **ruínas, artefatos e poderes antigos**. Suas mecânicas e origem permanecem TBD. Ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
-- **TBD:** lore, sociedades, criaturas específicas, regras/acesso à magia, narrativa, mapa, região inicial definitiva e papéis dos vilarejos.
+- **TBD:** lore, sociedades, criaturas específicas, detalhes do desbloqueio da magia, narrativa, mapa, região inicial definitiva e papéis dos vilarejos.
 
 ## 1. Visão
 **Proposta de fantasia:** explorar um ambiente perigoso, evoluir um personagem e erguer um refúgio que permita sobreviver e alcançar novas regiões.
@@ -59,7 +59,7 @@ O gênero RPG **não deve ser apenas uma barra de XP decorativa**. A progressão
 
 **Combate em tempo real é requisito confirmado.** Em M1, a proposta é testar um confronto mínimo e verificável, sem travar a definição de armas, magia, esquiva, lock-on ou direção de mira. Ver [COMBAT_DESIGN.md](COMBAT_DESIGN.md).
 
-**Propostas posteriores (M2/M3, exigem confirmação):** atributos adicionais, equipamentos, tipos de inimigos, NPCs e diálogos, novas missões, crafting especializado, classes, habilidades ativas, exploração com segredos e lore. **Não confirmado:** classes, acesso do jogador à magia, magias jogáveis, quantidade de ataques, habilidades e peso narrativo. **Confirmada somente a presença de magia rara e misteriosa no universo.**
+**Propostas posteriores (M2/M3, exigem confirmação):** atributos adicionais, equipamentos, tipos de inimigos, NPCs e diálogos, novas missões, crafting especializado, classes, habilidades ativas, exploração com segredos e lore. **Confirmado:** a magia NÃO está disponível no início; o jogador a descobrirá e poderá desbloquear habilidades e armas mágicas durante a exploração. **TBD:** quando e como ocorrerão descobertas, quais poderes, custos, classes e peso narrativo.
 
 ## 5. Prova jogável M1 — hipótese de produção
 **Exemplar único proposto:** pequena **clareira de floresta misteriosa** isométrica com personagem, madeira e pedra, fogueira posicionável, confronto de tempo real com **uma criatura de teste (espécie TBD)**, objetivo simples, progressão de uma escolha e uma noite de frio. Ruínas completas e vilarejos não são requisitos do M1; avaliar marcos visuais sem sobrecarregar o teste.
@@ -111,7 +111,23 @@ Nenhum teste foi realizado nesta fase documental.
 - Avaliar TileMapLayer/alternativa disponível conforme versão exata, sobreposição, oclusão de estruturas e pivôs antes de expandir arte.
 - Dados de recursos, receitas, perks, objetivos e parâmetros de combate: candidatos a `Resource` ou estruturas de dados separados do comportamento; decisões de arquitetura a validar.
 - Ações semânticas de input e resolução de física devem ser separadas; confirmar versão exata do Godot antes de especificar APIs, hitboxes, consultas físicas ou animações do ataque. Revisar [COMBAT_DESIGN.md](COMBAT_DESIGN.md).
-- Nenhum projeto Godot ou script foi criado.
+- **Existe protótipo-fonte em [game/](game/)**, mas ainda não foi executado/validado dentro do Godot (NOT_RUN).
+
+## Especificação de jogabilidade confirmada — 2026-10-08
+
+O jogador inicia humano, com equipamentos simples, e progride por exploração, coleta de madeira/pedra/minérios e outros materiais, fabricação de armas/armaduras e construção de abrigos.
+
+**Armas aprovadas como categorias iniciais:** espada, machado, lança e arco; **escudo** como equipamento defensivo. Cada arma deve ter atributos próprios de dano, alcance e velocidade. O jogador poderá atacar, defender e esquivar conforme o equipamento. Combate em tempo real fácil de aprender, com dificuldade crescente por meio de criaturas mais perigosas.
+
+**Personagem humano:** Pixel Art 2D isométrica com estados de parado, caminhada, corrida, ataque, dano e morte; começa com arma simples e melhora equipamentos durante a aventura.
+
+**Primeiro inimigo:** criatura hostil capaz de movimentar-se, detectar e perseguir o jogador, atacar, receber dano, morrer e conceder recursos/itens; pontos de vida e comportamento claros.
+
+**Prototipagem priorizada:** movimento, combate, IA básica, coleta e estruturas simples; expansão posterior de criaturas, equipamentos, biomas, RPG e mundo. **Magia indisponível no início**; poderes e equipamentos mágicos serão desbloqueados posteriormente por exploração. A natureza da magia continua rara e misteriosa, ligada a ruínas, artefatos e poderes antigos.
+
+**Implementação inicial existente:** [game/README.md](game/README.md), [game/scripts/main.gd](game/scripts/main.gd), [game/TEST_PLAN.md](game/TEST_PLAN.md). São arquivos construídos como primeira versão **sem teste de execução em Godot neste ambiente** (NOT_RUN). A arte procedural é substituta provisória dos sprites finais detalhados.
+
+**Diferença entre aprovação e implementação:** as categorias e o comportamento acima foram aprovados; sistemas completos de balanceamento, variedade, sprites finais, animações quadro a quadro e exploração de ruínas ainda não foram produzidos.
 
 ## 9. Pendências de direção
 - **D001 — CONFIRMADA:** visualização 2D isométrica.
@@ -121,10 +137,12 @@ Nenhum teste foi realizado nesta fase documental.
 - **D005 — PROPOSTO:** fogueira/frio como primeiro loop; usuário ainda não aprovou.
 - **D006 — EM ABERTO:** single-player ou multiplayer (M1 proposto solo).
 - **D007 — CONFIRMADO:** RPG faz parte do gênero do projeto.
-- **D008 — PARCIALMENTE CONFIRMADA:** **combate em tempo real**; ainda TBD: controle/mira, armas, magia, esquiva, classes, IA e peso narrativo das missões.
+- **D008 — PARCIALMENTE CONFIRMADA:** combate em tempo real, categorias espada/machado/lança/arco/escudo, defesa/esquiva e IA hostil básica. **TBD:** mira final, números de dano, habilidades avançadas, classes e peso narrativo.
 - **D009 — PROPOSTO:** primeiro mecanismo RPG = XP + escolha de benefício útil ao loop.
 - **D010 — PROPOSTO:** prova de combate com 1 ameaça (criatura provisória) e 1 ataque básico, sem decidir antecipadamente espécie, arma ou efeitos visuais.
 - **D011 — CONFIRMADO:** os quatro elementos de worldbuilding são componentes centrais do universo, não uma obrigação de implementar todas as regiões no primeiro protótipo.
-- **D012 — CONFIRMADA:** **magia rara e misteriosa**, vinculada a **ruínas, artefatos e poderes antigos**. Origem, acesso do personagem, regras e uso em combate/construção **TBD**.
+- **D012 — CONFIRMADA:** magia rara e misteriosa, vinculada a ruínas, artefatos e poderes antigos, **indisponível no início e desbloqueável por exploração**, permitindo futuramente habilidades e armas mágicas. Origem, regras/custos e momento do desbloqueio **TBD**.
+- **D013 — CONFIRMADA:** jogador humano, equipamentos simples, fabricação/melhoria de armas e armaduras, primeiro inimigo hostil com perseguição/ataque/HP/loot, conjunto de animações indicado no escopo.
+- **D014 — ALVO TÉCNICO PROPOSTO:** protótipo Godot 4.7.2 escolhido como base por disponibilidade de documentação atual. Execução local ainda **NOT_RUN**.
 
 Mudanças futuras devem atualizar este GDD, FORJA_PROJECT e FORJA_STATE de forma consistente.
