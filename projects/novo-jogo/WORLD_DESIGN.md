@@ -1,4 +1,4 @@
-# WORLD_DESIGN v0.1 — Fantasia Medieval Misteriosa
+# WORLD_DESIGN v0.2 — Fantasia Medieval Misteriosa
 
 **Status:** M0. Este documento distingue **CONFIRMADO** (direção dada pelo usuário), **PROPOSTO** (hipótese para orientar design/prototipagem) e **TBD** (decisão ainda não tomada).
 
@@ -6,9 +6,10 @@
 - **Ambientação:** fantasia medieval.
 - **Elementos que deverão compor o mundo:** **florestas misteriosas**, **ruínas antigas**, **vilarejos** e **criaturas**.
 - **Apresentação:** Pixel Art 2D isométrica detalhada, com atmosfera levemente dark — não sombria a ponto de comprometer cor e legibilidade.
+- **Magia — CONFIRMADO:** rara e misteriosa, ligada a **ruínas, artefatos e poderes antigos**. Ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
 - **Jogabilidade-base:** RPG, sobrevivência e construção, com combate em tempo real.
 
-**Não confirmado:** história central, origem das ruínas, presença/forma de magia, povos, raças, criaturas específicas, vilarejos habitados ou abandonados, escala do mapa, composição exata dos biomas, clima, facções, NPCs, sistemas de reputação, quests e progressão do enredo.
+**Não confirmado:** história central, origem das ruínas, regras de funcionamento e usuários da magia, povos, raças, criaturas específicas, vilarejos habitados ou abandonados, escala do mapa, composição exata dos biomas, clima, facções, NPCs, sistemas de reputação, quests e progressão do enredo.
 
 ## 2. Quatro elementos do mundo
 
@@ -20,7 +21,7 @@
 ### B. Ruínas antigas — CONFIRMADO
 **Função proposta:** marcos visuais da exploração e locais de descoberta de história, recursos ou desafios, **sem supor masmorras obrigatórias**.
 **Possível tratamento artístico:** alvenaria gasta, rachaduras, vegetação sobre pedra, silhueta arquitetônica distinta e contraste local.
-**TBD:** civilização de origem, propósito, interior explorável, puzzles, guardiões, tesouros e vínculo com narrativa.
+**CONFIRMADO:** ruínas antigas são uma das fontes de mistério associadas à magia rara, artefatos e poderes antigos. **TBD:** civilização de origem, propósito, interior explorável, puzzles, guardiões, tesouros, frequência de fenômenos mágicos e vínculo com narrativa.
 
 ### C. Vilarejos — CONFIRMADO
 **Função proposta:** contraponto à natureza, com arquitetura humana/fantástica, lugares de referência e, **caso aprovado**, NPCs, diálogo, comércio, reparos ou missões.
@@ -30,7 +31,10 @@
 ### D. Criaturas — CONFIRMADO
 **Função proposta:** dar vida e imprevisibilidade às regiões. As relações com combate, convivência, coleta e exploração serão decididas no design.
 **Possível tratamento artístico:** silhuetas diferenciadas, animações legíveis, contraste controlado e linguagem visual coerente com fantasia medieval.
-**TBD:** espécies, temperamentos, quantas são hostis/neutras/amigáveis, IA, biomas, loot e papel narrativo. **Não assumir que todas são inimigas nem que magia existe.**
+**TBD:** espécies, temperamentos, quantas são hostis/neutras/amigáveis, IA, biomas, loot e papel narrativo. **Não assumir que todas são inimigas nem que todas utilizam magia.** A magia existe, mas é rara.
+
+## 2.1 Magia rara e misteriosa — CONFIRMADA
+A magia está ligada a **ruínas, artefatos e poderes antigos**. É parte da identidade do mundo, não um recurso cotidiano de uso irrestrito. Suas regras exatas, história, acesso pelo jogador e implicações no combate/crafting **não estão definidos**. Exemplos de indícios ambientais (um objeto incomum ou fenômeno em uma ruína) são PROPOSTOS, não requisitos do protótipo. [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md) registra limites e pendências.
 
 ## 3. Estrutura macro do mundo — PROPOSTA, não um mapa aprovado
 - Uma **clareira de floresta** como teste inicial de movimentação, coleta, fogueira e risco noturno.
@@ -62,11 +66,11 @@ Todos os exemplos da tabela são PROPOSTOS. Não introduzir sistemas complexos s
 Antes de produzir muitas variantes, validar **uma clareira de floresta** como espaço navegável, **uma estrutura**, **um encontro com criatura**, **um objetivo de RPG** e **uma noite**; medir legibilidade e loop. Ruínas exploráveis e vilarejos completos só após aprovação da vertical slice.
 
 ## 7. Pendências para próximas decisões
-- Tipo de fantasia medieval: mais naturalista, fantástica/mágica, folclórica ou outra. **TBD**
+- Tipo de fantasia medieval: **CONFIRMADO** que há magia rara/misteriosa ligada a ruínas, artefatos e poderes antigos; nível de folclore e outros detalhes de tom **TBD**.
 - Papel dos vilarejos e moradores. **TBD**
 - Tipos de criaturas e postura perante o jogador. **TBD**
 - Mistério e origem das ruínas. **TBD**
-- Papel da magia, religiões, reinos, facções e narrativa. **TBD**
+- Natureza rara e misteriosa da magia: **CONFIRMADA**. Origem/regras/acesso/efeitos, religiões, reinos, facções e narrativa: **TBD**.
 - Nome do mundo e protagonista. **TBD**
 - Escala e estrutura do mapa. **TBD**
 
