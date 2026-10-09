@@ -32,22 +32,27 @@ func _ready() -> void:
     panel.color = Color(0.06, 0.085, 0.09, 0.83)
     panel.position = Vector2(12, 12)
     panel.size = Vector2(440, 304)
+    panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
     overlay.add_child(panel)
     hud = Label.new()
     hud.position = Vector2(23, 18)
+    hud.mouse_filter = Control.MOUSE_FILTER_IGNORE
     hud.add_theme_font_size_override("font_size", 16)
     hud.add_theme_color_override("font_color", Color("#f2e7cd"))
     overlay.add_child(hud)
     title = Label.new()
     title.position = Vector2(16, 661)
+    title.mouse_filter = Control.MOUSE_FILTER_IGNORE
     title.add_theme_font_size_override("font_size", 17)
     title.add_theme_color_override("font_color", Color("#f4cf8f"))
     overlay.add_child(title)
     _refresh_hud()
 
 func _bind_key(action: String, key: Key) -> void:
-    if not InputMap.has_action(action):
-        InputMap.add_action(action)
+    # Acoes personalizadas sao recriadas para evitar duplicidade apos F5.
+    if InputMap.has_action(action):
+        InputMap.erase_action(action)
+    InputMap.add_action(action)
     var event := InputEventKey.new()
     event.physical_keycode = key
     InputMap.action_add_event(action, event)
