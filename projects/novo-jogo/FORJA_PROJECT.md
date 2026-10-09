@@ -1,6 +1,6 @@
 # FORJA_PROJECT — Contrato verificável do projeto
 
-> **M0 / planejamento v0.3.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
+> **M0 / planejamento v0.4.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
 
 ## Identidade
 - Nome: TBD; diretório técnico: `projects/novo-jogo/`
@@ -30,8 +30,9 @@
 
 ## Visual
 - Técnica: **CONFIRMADO — arte/cenários 2D em composição isométrica**, não 3D obrigatório
-- Estilo de arte: **TBD por escolha explícita do usuário** (“outro estilo ainda a definir”); não adotar pixel art, ilustração, low-poly ou qualquer default
-- Referências, MUST-HAVE/MUST-NOT, cores, silhuetas, ambiente, arte fonte: TBD
+- Estilo de arte: **CONFIRMADO — Pixel Art detalhada, levemente dark** (ambiente sombrio moderado; preservar contraste e cores).
+- Qualidade/escala: **CONFIRMADO — riqueza visual intencional**; densidade de pixels, tile size, resolução base, paleta exata e iluminação específica **TBD**
+- Contrato visual: **[ART_DIRECTION.md](ART_DIRECTION.md)** define MUST-HAVE/MUST-NOT e exemplar proposto; referências concretas, bioma, cor/paleta final, personagens, pipeline-fonte: **TBD**
 - Contrato técnico preliminar: validar pivôs de sprites, camadas e profundidade, oclusão e leitura de construção no Godot 2D; configuração detalhada TBD
 
 ## Arquitetura
@@ -48,10 +49,10 @@
 - Testes: **NOT_RUN**, nenhum projeto Godot executável
 - Performance: NOT_RUN
 - Evidências: somente arquivos Markdown salvos no GitHub
-- Ainda não verificados: Godot exato, **estilo visual**, hardware, plataforma, **detalhes mecânicos de combate**, tempo de jogo, números de balanceamento
+- Ainda não verificados: Godot exato, **implementação e qualidade visual**, pixel scale/paleta, hardware, plataforma, **detalhes mecânicos de combate**, tempo de jogo e números de balanceamento
 
 ## Pendências para completar M0
-1. Definir estilo de arte e ambientação, mantendo o estilo TBD até escolha explícita.
+1. **Estilo artístico definido:** Pixel Art 2D isométrica detalhada, levemente dark. **Pendente:** ambientação narrativa, paleta, pixel scale e exemplar visual de prova.
 2. Definir detalhes de combate em tempo real: arma/ataque inicial, mira e defesa, sem presumir magia/classes.
 3. Confirmar plataforma/versão Godot e controles.
 4. Aprovar ou ajustar loop inicial fogueira/frio, prova de progressão e encontro mínimo.
