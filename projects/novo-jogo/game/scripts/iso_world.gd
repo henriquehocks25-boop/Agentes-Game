@@ -3,6 +3,7 @@ extends RefCounted
 const SIZE := 24
 const HALF_WIDTH := 32.0
 const HALF_HEIGHT := 16.0
+var blockers: Array[Vector2] = []
 
 static func project(v: Vector2) -> Vector2:
     return Vector2((v.x - v.y) * HALF_WIDTH, (v.x + v.y) * HALF_HEIGHT)
@@ -11,7 +12,12 @@ static func unproject(p: Vector2) -> Vector2:
     return Vector2(p.x / (HALF_WIDTH * 2.0) + p.y / (HALF_HEIGHT * 2.0), p.y / (HALF_HEIGHT * 2.0) - p.x / (HALF_WIDTH * 2.0))
 
 func is_walkable(v: Vector2) -> bool:
-    return v.x >= 1.0 and v.y >= 1.0 and v.x < float(SIZE - 1) and v.y < float(SIZE - 1)
+    if not (v.x >= 1.0 and v.y >= 1.0 and v.x < float(SIZE - 1) and v.y < float(SIZE - 1)):
+        return false
+    for blocked in blockers:
+        if v.distance_to(blocked) < 0.64:
+            return false
+    return true
 
 func draw_ground(c: CanvasItem) -> void:
     for y in range(SIZE):
