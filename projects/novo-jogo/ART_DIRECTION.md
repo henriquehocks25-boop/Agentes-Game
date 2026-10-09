@@ -1,8 +1,8 @@
-# ART_DIRECTION v0.2 — Pixel Art Isométrica Detalhada, Levemente Dark
+# ART_DIRECTION v0.3 — Pixel Art Isométrica Detalhada, Levemente Dark
 
 **CONFIRMADO PELO USUÁRIO:** jogo **2D isométrico**, **Pixel Art**, **bem detalhado**, com clima **um pouco dark**. A estética é mais sombria, mas **não totalmente escura**. RPG, sobrevivência, construção e combate em tempo real já constam no GDD.
 
-**Ambientação CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **Ainda indefinido (TBD):** personagens, espécies de criaturas, lore, referências estéticas específicas, paleta exata, resolução base, escala de pixel, tamanho de tiles, controles de câmera, biomas adicionais e pipeline de assets.
+**Ambientação CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**; **magia rara e misteriosa ligada a ruínas, artefatos e poderes antigos**. **Ainda indefinido (TBD):** personagens, espécies de criaturas, lore, referências estéticas específicas, paleta exata, resolução base, escala de pixel, tamanho de tiles, controles de câmera, biomas adicionais e pipeline de assets.
 
 ## Objetivo visual
 Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma atmosfera levemente sombria. O detalhamento deve sustentar **um lugar vivo e construível**, sem virar excesso de ruído nem prejudicar leitura rápida de inimigos, recursos, estruturas, HUD e ataques.
@@ -30,7 +30,8 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 - **Ruínas antigas (confirmadas):** estruturas arquitetônicas envelhecidas distinguíveis de rochas comuns; inscrições, vegetação invasiva e paredes quebradas são sugestões.
 - **Vilarejos (confirmados):** silhuetas arquitetônicas coerentes com fantasia medieval, telhados e vias perceptíveis na isometria; existência/estilo dos moradores não decidido.
 - **Criaturas (confirmadas):** linguagem de forma consistente, leitura imediata de ameaça quando forem hostis; espécies e comportamento TBD.
-- Não reproduzir estilos de franquias existentes; criar identidade própria a partir do contrato. Consultar [WORLD_DESIGN.md](WORLD_DESIGN.md).
+- **Magia rara (confirmada):** reservar linguagem visual extraordinária para pistas, artefatos e poderes antigos. Elementos gráficos possíveis (inscrições ou emissões sutis) são PROPOSTOS; símbolos, tons e efeitos específicos TBD.
+- Não reproduzir estilos de franquias existentes; criar identidade própria a partir do contrato. Consultar [WORLD_DESIGN.md](WORLD_DESIGN.md) e [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
 
 ## Recomendações de direção (PROPOSTAS, não decisões fechadas)
 - **Luz e valor:** sombras frias e iluminação pontual mais quente podem funcionar, mas paleta exata depende da ambientação. Reservar os maiores contrastes às decisões do jogador.
@@ -62,6 +63,7 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 2. **Paleta e temperatura**, quantidade de luz, cores de materiais e do personagem. **TBD**.
 3. **Escala/pixel density:** tamanho base do sprite/personagem, tiles, render scale, zoom e aspect. **TBD**.
 4. **Referências visuais específicas** e proibições adicionais do usuário. **TBD**.
+5. **Magia:** frequência visual, cores, símbolos, partículas e regras de efeitos **TBD**; a sua raridade e associação com ruínas/artefatos/poderes antigos estão CONFIRMADAS.
 
 ## Fontes da base Agentes-Game
 - `../../knowledge/visual/art_direction.md`: coerência entre emoção, paleta, valores e materiais.
