@@ -1,6 +1,6 @@
 # FORJA_PROJECT — Contrato verificável do projeto
 
-> **M0 / planejamento v0.5.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
+> **M0 / planejamento v0.6.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
 
 ## Identidade
 - Nome: TBD; diretório técnico: `projects/novo-jogo/`
@@ -22,9 +22,10 @@
 - Meta loop: **PROPOSTO** — ampliar base e especialização para novas regiões
 - RPG: **CONFIRMADO como gênero**; **PROPOSTO M1** — objetivo, XP e escolha entre duas melhorias funcionais
 - Combate: **CONFIRMADO — tempo real**. **PROPOSTO M1-B:** 1 encontro de ameaça e ataque básico. **TBD:** armas, mira, defesa, dodge, magia, ritmo, habilidades e IA
-- Classes, magia, NPCs, missões narrativas: TBD
+- Magia no mundo: **CONFIRMADA — rara e misteriosa, associada a ruínas, artefatos e poderes antigos**. Acesso, origens, limites e funções jogáveis **TBD**; ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
+- Classes, magia jogável, NPCs, missões narrativas: TBD
 - Recursos/economia: **PROPOSTO** — madeira e pedra; madeira para estrutura/combustível
-- Mundo/ambientação: **CONFIRMADO — fantasia medieval**, com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**.
+- Mundo/ambientação: **CONFIRMADO — fantasia medieval**, com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **Poderes antigos, artefatos e ruínas** são parte do mistério mágico confirmado.
 - Região inicial: **PROPOSTO M1** — uma clareira em floresta misteriosa; escala do mundo, localização/implementação de ruínas e vilarejos, espécies e lore **TBD**.
 - Controles/InputMap: TBD
 - Save schema: TBD; M1 proposto sem save
@@ -33,7 +34,7 @@
 - Técnica: **CONFIRMADO — arte/cenários 2D em composição isométrica**, não 3D obrigatório
 - Estilo de arte: **CONFIRMADO — Pixel Art detalhada, levemente dark** (ambiente sombrio moderado; preservar contraste e cores).
 - Qualidade/escala: **CONFIRMADO — riqueza visual intencional**; densidade de pixels, tile size, resolução base, paleta exata e iluminação específica **TBD**
-- Contrato visual: **[ART_DIRECTION.md](ART_DIRECTION.md)** define MUST-HAVE/MUST-NOT; **[WORLD_DESIGN.md](WORLD_DESIGN.md)** documenta os quatro elementos centrais confirmados. Referências concretas, materiais/paleta final, personagens, criaturas específicas e pipeline-fonte: **TBD**
+- Contrato visual: **[ART_DIRECTION.md](ART_DIRECTION.md)** define MUST-HAVE/MUST-NOT; **[WORLD_DESIGN.md](WORLD_DESIGN.md)** documenta os quatro elementos centrais confirmados; **[MAGIC_SYSTEM.md](MAGIC_SYSTEM.md)** registra raridade e ligações com ruínas/artefatos/poderes antigos. Referências concretas, materiais/paleta final, personagens, criaturas específicas e pipeline-fonte: **TBD**
 - Contrato técnico preliminar: validar pivôs de sprites, camadas e profundidade, oclusão e leitura de construção no Godot 2D; configuração detalhada TBD
 
 ## Arquitetura
@@ -50,10 +51,10 @@
 - Testes: **NOT_RUN**, nenhum projeto Godot executável
 - Performance: NOT_RUN
 - Evidências: somente arquivos Markdown salvos no GitHub
-- Ainda não verificados: Godot exato, **implementação e qualidade visual**, pixel scale/paleta, hardware, plataforma, **detalhes mecânicos de combate**, tempo de jogo e números de balanceamento
+- Ainda não verificados: Godot exato, **implementação e qualidade visual**, pixel scale/paleta, hardware, plataforma, **detalhes mecânicos de combate e magia jogável**, lore, tempo de jogo e números de balanceamento
 
 ## Pendências para completar M0
-1. **Direção artística e ambientação definidas:** Pixel Art 2D isométrica detalhada, levemente dark; fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas. **Pendente:** lore, paleta, pixel scale e exemplar visual de prova.
+1. **Direção artística e ambientação definidas:** Pixel Art 2D isométrica detalhada, levemente dark; fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas; **magia rara/misteriosa em ruínas, artefatos e poderes antigos**. **Pendente:** lore, paleta, pixel scale e exemplar visual de prova.
 2. Definir detalhes de combate em tempo real: arma/ataque inicial, mira e defesa, sem presumir magia/classes.
 3. Confirmar plataforma/versão Godot e controles.
 4. Aprovar ou ajustar loop inicial fogueira/frio, prova de progressão e encontro mínimo.
