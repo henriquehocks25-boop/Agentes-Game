@@ -1,22 +1,25 @@
-# Novo Jogo — Sobrevivência / Construção
+# Novo Jogo — RPG de Sobrevivência e Construção 2D Isométrico
 
-Pasta de **planejamento** no repositório Agentes-Game. O gênero foi definido pelo usuário: **Sobrevivência / Construção**. Outros elementos continuam abertos.
+**CONFIRMADO:** jogo de RPG + sobrevivência + construção, com visão **2D isométrica**.
+**EM ABERTO:** estética, ambientação, combate, versão exata do Godot, plataforma, escopo definitivo e demais detalhes.
+**Fase:** M0 — Direção. **Não existe jogo executável ainda.**
 
-## Documentos
-- **[GDD.md](GDD.md)** — proposta de design v0.1, loop de sobrevivência, sistemas, risco e opções de câmera.
-- **[ROADMAP.md](ROADMAP.md)** — milestones M0–M4 e critérios de validação.
-- **[FORJA_PROJECT.md](FORJA_PROJECT.md)** — contrato que distingue CONFIRMADO / PROPOSTO / TBD.
-- **[FORJA_STATE.md](FORJA_STATE.md)** — checkpoint de progresso.
+## Documentos do projeto
+- [GDD.md](GDD.md) — proposta v0.2 com pilares, ciclo de jogo, integração RPG, prova jogável e decisões abertas.
+- [RPG_SYSTEMS.md](RPG_SYSTEMS.md) — progressão, habilidades e opções de combate/NPCs/quests; separa gênero confirmado de sistemas propostos.
+- [ROADMAP.md](ROADMAP.md) — milestones M0–M4 e critérios de aceite.
+- [FORJA_PROJECT.md](FORJA_PROJECT.md) — contrato com CONFIRMADO, PROPOSTO e TBD.
+- [FORJA_STATE.md](FORJA_STATE.md) — checkpoint e evidências.
 
-## Base de conhecimento usada
-- [Router global](../../AGENTS.md)
-- [Workflow do estúdio](../../STUDIO_WORKFLOW.md)
-- [Pilares e loops](../../knowledge/game_design/pillars_core_meta_loops.md)
-- [Design de sistemas](../../knowledge/game_design/systems_design.md)
-- [Escopo e vertical slice](../../knowledge/game_design/scope_vertical_slice.md)
-- [Contrato visual](../../knowledge/visual/visual_contract.md)
+## Knowledge Base utilizada (somente leitura)
+- [AGENTS.md](../../AGENTS.md)
+- [STUDIO_WORKFLOW.md](../../STUDIO_WORKFLOW.md)
+- [Game Design](../../knowledge/game_design/index.md): pilares, loop, systems design, progression e escopo.
+- [Godot](../../knowledge/godot/project_architecture.md): cenas e composição, após versão validada.
+- [Arte/Perspectiva](../../knowledge/visual/camera_depth.md): câmera, profundidade e legibilidade.
 
-## Próximo passo
-Escolher a câmera/perspectiva e arte, aprovar ou alterar o protótipo de coleta → construção de fogueira → sobrevivência noturna; confirmar versão Godot/plataforma.
+## Próxima decisão
+Escolher **estilo artístico** e a natureza do **RPG/combate**. Antes de implementar, confirmar também a versão do Godot e aprovar a proposta do primeiro loop: exploração/coleta, experiência, escolha de melhoria, fogueira e sobrevivência à noite.
 
-**Estado:** M0 — proposta pendente de decisões. **Ainda não há jogo executável, código, assets ou testes.**
+## Regra
+Não assumir que o projeto é 3D ou "2.5D" só porque a câmera é isométrica. Não declarar build/testes/arte pronta sem executá-los.
