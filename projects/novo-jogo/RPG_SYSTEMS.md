@@ -1,6 +1,6 @@
 # RPG_SYSTEMS — Integração de RPG à Sobrevivência/Construção
 
-**Gênero RPG confirmado.** Mecânicas abaixo são opções de design propostas, **não** funcionalidades aprovadas ou implementadas.
+**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual: TBD**.
 **Fonte:** ../../knowledge/game_design/progression.md, systems_design.md e combat_design.md.
 
 ## Objetivo de design
@@ -18,12 +18,19 @@ Evitar que RPG seja um sistema paralelo de XP sem sentido. Progressão deve torn
 
 **Sem números fixados antes de playtest.** Evitar ganhar XP ilimitada repetindo uma interação banal. As recompensas precisam ser reproduzíveis nos testes.
 
+## Combate RPG em tempo real — escopo e interfaces
+- **CONFIRMADO:** ações de combate se resolvem em tempo real, não em turnos.
+- **PROPOSTO para M1-B:** 1 inimigo representativo, 1 ataque básico, telegraph visível/legível, dano e feedback de hit, chance de evitar o perigo por movimento/posicionamento, morte ou recuperação consistente.
+- **TBD:** modo de mira (mouse/direcional/assistido), ataques melee/ranged, armas, habilidades ativas, stamina, dash/esquiva, bloqueio, lock-on, agressividade/IA e aparência.
+- **Integração de progressão:** futuro perk de combate deve alterar decisões (alcance, tempo, consumo ou comportamento), não apenas amplificar dano; somente adicionar após validar o loop RPG proposto.
+- **Referência:** [COMBAT_DESIGN.md](COMBAT_DESIGN.md).
+
 ## Sistema proposto para evolução futura — M2/M3
 1. **Atributos:** saúde, vigor e atributos funcionais; adicionar somente se cada um sustentar escolhas.
 2. **Especializações em vez de classes obrigatórias:** exploração, sobrevivência, artesanato e combate; classes rígidas são uma alternativa em aberto.
 3. **Equipamentos e inventário:** ferramentas, roupas e armas se o loop justificar; propriedades explícitas, balanceamento centralizado.
 4. **Missões:** objetivos de exploração, sobrevivência ou construção; NPCs e narrativa só se a direção aprovar.
-5. **Combate:** decisão pendente entre tempo real, por turnos, tático, simples defesa ambiental ou ausência de combate. Não implementar inimigos antes da escolha.
+5. **Combate:** tempo real **CONFIRMADO**. Ritmo, armas, inimigos, classes, habilidades, mira e defesa **TBD**. O primeiro encontro mínimo é **PROPOSTO**, não design fechado.
 6. **Crafting e progressão:** novas receitas devem solucionar problemas reais ou abrir estratégias, não somente inflar conteúdo.
 
 ## Dependências e riscos
@@ -34,7 +41,7 @@ Evitar que RPG seja um sistema paralelo de XP sem sentido. Progressão deve torn
 - Multiplayer aumenta substancialmente complexidade do estado e sincronização.
 
 ## Perguntas de direção ainda abertas
-- Combate: tempo real / turnos / mínimo ou nenhum?
+- Combate: **tempo real confirmado**; quais armas, habilidades, mira, defesa e tipos de inimigos?
 - Mundo: fantasia medieval / natureza / pós-apocalipse / outro?
 - Progressão: classes fixas / árvores livres / perks leves?
 - Missões: foco narrativo com NPCs ou objetivos sistêmicos de sobrevivência?
