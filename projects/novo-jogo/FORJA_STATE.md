@@ -2,7 +2,7 @@
 
 - Data / branch / projeto: 2026-10-08 / main / projects/novo-jogo/
 - Milestone: **M0 — Direção parcialmente confirmada**
-- Confirmações do usuário: **RPG + Sobrevivência + Construção; 2D isométrico; combate em tempo real; Pixel Art detalhada, um pouco dark; fantasia medieval, florestas misteriosas, ruínas antigas, vilarejos e criaturas; **magia rara e misteriosa ligada a ruínas, artefatos e poderes antigos**
+- Confirmações do usuário: **RPG + Sobrevivência + Construção; 2D isométrico; combate em tempo real; Pixel Art detalhada, um pouco dark; fantasia medieval, florestas misteriosas, ruínas antigas, vilarejos e criaturas; magia rara e misteriosa ligada a ruínas, artefatos e poderes antigos**
 - Estilo artístico: **CONFIRMADO** — Pixel Art detalhada com atmosfera levemente dark; paleta e pixel scale TBD
 - Objetivo e acceptance criteria: fechar direção visual, mecânicas principais, versão Godot e aprovar prova jogável pequena
 - Status: **BLOCKED (M0 incompleto)** — lore, paleta/pixel scale, regras específicas de combate, plataforma, versão Godot e validação do loop proposto ainda abertos
