@@ -1,6 +1,6 @@
 # RPG_SYSTEMS — Integração de RPG à Sobrevivência/Construção
 
-**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual CONFIRMADO: Pixel Art 2D isométrica detalhada, levemente dark**. Paleta exata, resolução e lore permanecem TBD. **Mundo CONFIRMADO: fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas.**
+**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual CONFIRMADO: Pixel Art 2D isométrica detalhada, levemente dark**. Paleta exata, resolução e lore permanecem TBD. **Magia rara/misteriosa associada a ruínas, artefatos e poderes antigos está CONFIRMADA; mecânicas de magia jogável permanecem TBD.** **Mundo CONFIRMADO: fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas.**
 **Fonte:** ../../knowledge/game_design/progression.md, systems_design.md e combat_design.md.
 
 ## Objetivo de design
@@ -25,6 +25,9 @@ Evitar que RPG seja um sistema paralelo de XP sem sentido. Progressão deve torn
 - **Integração de progressão:** futuro perk de combate deve alterar decisões (alcance, tempo, consumo ou comportamento), não apenas amplificar dano; somente adicionar após validar o loop RPG proposto.
 - **Referência:** [COMBAT_DESIGN.md](COMBAT_DESIGN.md).
 
+## Magia rara — contrato narrativo confirmado, mecânicas abertas
+A magia pertence ao mundo, ligada a ruínas, artefatos e poderes antigos; **não** foi decidido que o personagem possa conjurar, ter mana ou ser um mago. Não tratar feitiços comuns como progressão-base obrigatória. Possíveis interações tardias com artefatos ou descobertas são PROPOSTAS e dependem de aprovação. Ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
+
 ## Sistema proposto para evolução futura — M2/M3
 1. **Atributos:** saúde, vigor e atributos funcionais; adicionar somente se cada um sustentar escolhas.
 2. **Especializações em vez de classes obrigatórias:** exploração, sobrevivência, artesanato e combate; classes rígidas são uma alternativa em aberto.
@@ -42,7 +45,7 @@ Evitar que RPG seja um sistema paralelo de XP sem sentido. Progressão deve torn
 
 ## Perguntas de direção ainda abertas
 - Combate: **tempo real confirmado**; quais armas, habilidades, mira, defesa e tipos de inimigos?
-- Mundo: **fantasia medieval confirmada**. Ainda falta definir história das ruínas, função dos vilarejos, espécies de criaturas e nível de magia.
+- Mundo: **fantasia medieval confirmada**, com **magia rara/misteriosa** ligada a **ruínas, artefatos e poderes antigos**. Ainda faltam origem/regras dos poderes, função dos vilarejos e espécies de criaturas.
 - Progressão: classes fixas / árvores livres / perks leves?
 - Missões: foco narrativo com NPCs ou objetivos sistêmicos de sobrevivência?
 
