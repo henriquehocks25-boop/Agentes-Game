@@ -1,12 +1,13 @@
-# COMBAT_DESIGN v0.2 — Combate em Tempo Real (2D Isométrico)
+# COMBAT_DESIGN v0.3 — Combate em Tempo Real (2D Isométrico)
 
-> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **CONFIRMADO**: **Pixel Art detalhada com atmosfera levemente dark**. **CONFIRMADO**: mundo de fantasia medieval com criaturas. **TBD**: armas, mira, defesa, habilidades, magia, classes, espécies e hostilidade das criaturas, além da paleta específica. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
+> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **CONFIRMADO**: **Pixel Art detalhada com atmosfera levemente dark**. **CONFIRMADO**: mundo de fantasia medieval com criaturas. **CONFIRMADO**: magia rara e misteriosa no mundo, associada a ruínas, artefatos e poderes antigos. **TBD**: armas, mira, defesa, habilidades, acesso à magia jogável, classes, espécies e hostilidade das criaturas, além da paleta específica. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
 
 ## Propósito do combate
 Combate deve criar escolhas de **posicionamento, tempo de ataque, segurança e risco de sair da base**; não ser uma camada solta de dano/XP. Deve coexistir com explorar, coletar, construir e sobreviver, sem prejudicar a legibilidade isométrica.
 
 ## Contrato confirmado
 - Tempo de resolução: **real time**, sem turno, grade tática ou pausa obrigatória para selecionar ação.
+- A magia do universo é rara; **não presumir ataque mágico básico, mana, inimigos conjuradores ou feitiços disponíveis desde o início**. O primeiro confronto de M1-B pode ser não mágico.
 - Mundo e câmera: **2D isométrico**, sem transformar o jogo em 3D apenas para implementar hitboxes.
 - Estética: **Pixel Art 2D isométrica detalhada, levemente sombria**. Manter ataques, silhuetas e antecipações visíveis sobre cenários mais escuros. Paleta exata e efeitos individuais ainda em aberto.
 
@@ -27,6 +28,7 @@ Alcance, dano, intervalo de ataque, velocidade do inimigo, HP, aggro, telegraph 
 - Esquiva/dash, bloqueio, stamina, habilidades ativas ou somente movimentação?
 - **Criaturas fazem parte do mundo confirmado.** Quais espécies, temperamentos e papéis em combate? Outras categorias de oponentes são TBD.
 - Progressão de combate via perks/skills, classes ou equipamento?
+- Se/como poderes antigos podem aparecer no combate é TBD. Ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
 - Morte permanente, perda de itens, respawn ou checkpoint?
 - PVE apenas ou algum tipo de PVP? Multiplayer ainda TBD.
 
