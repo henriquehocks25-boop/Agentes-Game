@@ -1,8 +1,8 @@
-# ART_DIRECTION v0.1 — Pixel Art Isométrica Detalhada, Levemente Dark
+# ART_DIRECTION v0.2 — Pixel Art Isométrica Detalhada, Levemente Dark
 
 **CONFIRMADO PELO USUÁRIO:** jogo **2D isométrico**, **Pixel Art**, **bem detalhado**, com clima **um pouco dark**. A estética é mais sombria, mas **não totalmente escura**. RPG, sobrevivência, construção e combate em tempo real já constam no GDD.
 
-**Ainda indefinido (TBD):** ambientação/época, fantasia ou não, personagem, espécies, referências estéticas específicas, paleta exata, resolução base, escala de pixel, tamanho de tiles, controles de câmera, biomas e pipeline de assets.
+**Ambientação CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **Ainda indefinido (TBD):** personagens, espécies de criaturas, lore, referências estéticas específicas, paleta exata, resolução base, escala de pixel, tamanho de tiles, controles de câmera, biomas adicionais e pipeline de assets.
 
 ## Objetivo visual
 Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma atmosfera levemente sombria. O detalhamento deve sustentar **um lugar vivo e construível**, sem virar excesso de ruído nem prejudicar leitura rápida de inimigos, recursos, estruturas, HUD e ataques.
@@ -23,7 +23,14 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 4. Não confundir detalhamento com ruído uniforme no chão/cenário; evitar textura repetida e grades técnicas aparentes.
 5. Não produzir personagem/inimigo genérico como círculo/bloco sem trabalho de silhueta/material, nem confundir placeholders com arte final.
 6. Não esconder ataque, loot, recursos ou caminhos sob sombras/folhagem/efeitos de iluminação.
-7. Não assumir tema “dark fantasy medieval”, terror, sangue, necromancia, néon ou qualquer universo não escolhido pelo usuário.
+7. Não exagerar o tom medieval fantástico confirmado para transformar o jogo automaticamente em terror extremo, grimdark, monocromia, sangue/necromancia, néon ou outras escolhas não solicitadas.
+
+## Vocabulário visual do mundo — AMBIENTAÇÃO CONFIRMADA / TRATAMENTO PROPOSTO
+- **Florestas misteriosas (confirmadas):** sobreposição de copas, árvores com formas variadas, trilhas e clareiras legíveis; névoa pontual e musgo são propostas, não itens obrigatórios.
+- **Ruínas antigas (confirmadas):** estruturas arquitetônicas envelhecidas distinguíveis de rochas comuns; inscrições, vegetação invasiva e paredes quebradas são sugestões.
+- **Vilarejos (confirmados):** silhuetas arquitetônicas coerentes com fantasia medieval, telhados e vias perceptíveis na isometria; existência/estilo dos moradores não decidido.
+- **Criaturas (confirmadas):** linguagem de forma consistente, leitura imediata de ameaça quando forem hostis; espécies e comportamento TBD.
+- Não reproduzir estilos de franquias existentes; criar identidade própria a partir do contrato. Consultar [WORLD_DESIGN.md](WORLD_DESIGN.md).
 
 ## Recomendações de direção (PROPOSTAS, não decisões fechadas)
 - **Luz e valor:** sombras frias e iluminação pontual mais quente podem funcionar, mas paleta exata depende da ambientação. Reservar os maiores contrastes às decisões do jogador.
@@ -34,7 +41,7 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 - **Pipeline:** testar nearest-neighbor e zoom/scale adequados à resolução base, escolhidos após validação no Godot exato.
 
 ## Cena representativa para prova visual (PROPOSTA)
-**Um único recorte isométrico do primeiro mapa** com personagem, 1–2 objetos de coleta, uma construção de teste e uma ameaça de combate. Capturar **dia/tarde** e **noite** para provar que o clima dark não sacrifica leitura.
+**Um único recorte isométrico de floresta misteriosa** com personagem, 1–2 objetos de coleta, uma construção de teste e uma criatura de combate provisória. Uma ruína pode aparecer como ponto visual somente se não ampliar o escopo de M1. Capturar **dia/tarde** e **noite** para provar que o clima dark não sacrifica leitura.
 
 ### Entregáveis propostos do artista
 1. Mini moodboard com **princípios** (sem copiar assets de jogos específicos), identidade e anti-referências.
@@ -51,7 +58,7 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 - Comparação BEFORE/AFTER e revisão por QA/Guardião com evidências reais, não autoaprovação.
 
 ## Próximas decisões
-1. **Ambientação narrativa:** medieval fantástico, mundo natural, pós-apocalíptico, outro? **TBD**.
+1. **Ambientação geral: CONFIRMADA — fantasia medieval, florestas misteriosas, ruínas antigas, vilarejos e criaturas.** Histórias, arquitetura particular, espécies e nível de magia **TBD**.
 2. **Paleta e temperatura**, quantidade de luz, cores de materiais e do personagem. **TBD**.
 3. **Escala/pixel density:** tamanho base do sprite/personagem, tiles, render scale, zoom e aspect. **TBD**.
 4. **Referências visuais específicas** e proibições adicionais do usuário. **TBD**.
