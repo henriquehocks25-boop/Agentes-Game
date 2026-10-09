@@ -1,8 +1,13 @@
-# GDD v0.4 — RPG de Sobrevivência e Construção (2D Isométrico)
+# GDD v0.5 — RPG de Sobrevivência e Construção (2D Isométrico)
 
 **Estado:** M0 — direção parcialmente confirmada, outras decisões abertas.
 **CONFIRMADO pelo usuário:** jogo de **sobrevivência + construção + RPG**, em **2D isométrico**, com **combate em tempo real**. O **estilo visual está CONFIRMADO: Pixel Art detalhada, com atmosfera levemente dark**. A direção é sombria na medida certa, sem sacrificar cores, leitura e detalhes.
 **PROPOSTO** significa hipótese de design não aprovada. **TBD** significa decisão aberta.
+
+## 0. Ambientação confirmada
+- **Fantasia medieval**, com **florestas misteriosas, ruínas antigas, vilarejos e criaturas** como elementos centrais do mundo.
+- **CONTRATO:** [WORLD_DESIGN.md](WORLD_DESIGN.md) organiza a ambientação confirmada e propostas de função de cada lugar/elemento.
+- **TBD:** lore, sociedades, criaturas específicas, magia, narrativa, mapa, região inicial definitiva e papéis dos vilarejos.
 
 ## 1. Visão
 **Proposta de fantasia:** explorar um ambiente perigoso, evoluir um personagem e erguer um refúgio que permita sobreviver e alcançar novas regiões.
@@ -13,13 +18,13 @@ A experiência é híbrida:
 - **RPG:** desenvolver o personagem por meio de experiências, escolhas de habilidades e objetivos no mundo.
 
 **Representação visual confirmada:** **2D isométrico**, com sprites/cenários 2D que simulam profundidade por projeção, sobreposição e ordenação. Não escolher pipeline 3D nem rotular como 2.5D sem outra decisão explícita.
-**Nome, tema, paleta específica, densidade/resolução dos pixels, narrativa, plataforma, Godot exato, classes, armas, habilidades e regras específicas de combate:** TBD. O **tipo de combate (tempo real)** já está confirmado.
+**Nome, lore, paleta específica, densidade/resolução dos pixels, narrativa, plataforma, Godot exato, classes, armas, habilidades e regras específicas de combate:** TBD. **Ambientação medieval fantástica e seus quatro elementos centrais estão confirmados.** O **tipo de combate (tempo real)** já está confirmado.
 
 ## 1.1 Identidade visual confirmada
 - Técnica: **Pixel Art 2D isométrica**, pixelagem intencional consistente em personagens, ambiente, estruturas e efeitos.
 - Tratamento: **bem detalhado**, com silhuetas trabalhadas, riqueza de materiais e acabamento; não confundir com textura ruidosa que prejudica a leitura.
 - Atmosfera: **ligeiramente sombria (dark)**, com sombras e luz local que sustentem o clima, sem ficar totalmente escura, dessaturada ou ilegível.
-- Pixel size, resolução, dimensão da tile, paleta e ambientação narrativa: **TBD**.
+- Pixel size, resolução, dimensão da tile e paleta exata: **TBD**. **Ambientação:** fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas; detalhes narrativos TBD.
 - Contrato e primeiro exemplar artístico: [ART_DIRECTION.md](ART_DIRECTION.md).
 
 ## 2. Pilares — propostas
@@ -56,7 +61,7 @@ O gênero RPG **não deve ser apenas uma barra de XP decorativa**. A progressão
 **Propostas posteriores (M2/M3, exigem confirmação):** atributos adicionais, equipamentos, tipos de inimigos, NPCs e diálogos, novas missões, crafting especializado, classes, habilidades ativas, exploração com segredos e lore. **Não confirmado:** classes, magia, quantidade de ataques, habilidades e peso narrativo.
 
 ## 5. Prova jogável M1 — hipótese de produção
-**Exemplar único proposto:** pequena clareira isométrica com personagem, nós de madeira e pedra, uma fogueira posicionável, um confronto de combate em tempo real, objetivo simples, progressão de uma escolha e uma noite de frio.
+**Exemplar único proposto:** pequena **clareira de floresta misteriosa** isométrica com personagem, madeira e pedra, fogueira posicionável, confronto de tempo real com **uma criatura de teste (espécie TBD)**, objetivo simples, progressão de uma escolha e uma noite de frio. Ruínas completas e vilarejos não são requisitos do M1; avaliar marcos visuais sem sobrecarregar o teste.
 
 Sistemas:
 1. **Movimentação em mundo 2D isométrico:** controles coerentes com direção na tela e ordenação por profundidade; colisão sem atravessar obstáculos.
@@ -110,13 +115,14 @@ Nenhum teste foi realizado nesta fase documental.
 ## 9. Pendências de direção
 - **D001 — CONFIRMADA:** visualização 2D isométrica.
 - **D002 — CONFIRMADA:** **Pixel Art detalhada, um pouco dark**, 2D isométrica. Paleta exata, tamanho do pixel e referências específicas ainda **TBD**.
-- **D003 — EM ABERTO:** ambientação e tom (fantasia, medieval, pós-apocalíptico, natureza etc.).
+- **D003 — CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **TBD:** lore, nível de magia, reinos, povos, espécies e papel dos vilarejos/ruínas.
 - **D004 — EM ABERTO:** plataforma, Godot exato, resolução e controles.
 - **D005 — PROPOSTO:** fogueira/frio como primeiro loop; usuário ainda não aprovou.
 - **D006 — EM ABERTO:** single-player ou multiplayer (M1 proposto solo).
 - **D007 — CONFIRMADO:** RPG faz parte do gênero do projeto.
 - **D008 — PARCIALMENTE CONFIRMADA:** **combate em tempo real**; ainda TBD: controle/mira, armas, magia, esquiva, classes, IA e peso narrativo das missões.
 - **D009 — PROPOSTO:** primeiro mecanismo RPG = XP + escolha de benefício útil ao loop.
-- **D010 — PROPOSTO:** prova de combate com 1 ameaça e 1 ataque básico, sem decidir antecipadamente arma ou efeitos visuais.
+- **D010 — PROPOSTO:** prova de combate com 1 ameaça (criatura provisória) e 1 ataque básico, sem decidir antecipadamente espécie, arma ou efeitos visuais.
+- **D011 — CONFIRMADO:** os quatro elementos de worldbuilding são componentes centrais do universo, não uma obrigação de implementar todas as regiões no primeiro protótipo.
 
 Mudanças futuras devem atualizar este GDD, FORJA_PROJECT e FORJA_STATE de forma consistente.
