@@ -87,13 +87,16 @@ func _seed_resources() -> void:
         Vector2(3, 4), Vector2(21, 16), Vector2(8, 17), Vector2(20, 20)
     ]:
         nodes.append({"kind": "wood", "pos": coords, "left": 4})
+        world.blockers.append(coords)
     for coords in [
         Vector2(8, 10), Vector2(11, 9), Vector2(13, 15), Vector2(5, 9),
         Vector2(16, 7), Vector2(20, 13), Vector2(7, 19), Vector2(16, 20)
     ]:
         nodes.append({"kind": "stone", "pos": coords, "left": 4})
+        world.blockers.append(coords)
     for coords in [Vector2(12, 10), Vector2(6, 13), Vector2(17, 12), Vector2(19, 5)]:
         nodes.append({"kind": "ore", "pos": coords, "left": 3})
+        world.blockers.append(coords)
 
 func _process(delta: float) -> void:
     var dt := minf(delta, 0.05)
@@ -161,7 +164,7 @@ func _tick_survival(dt: float) -> void:
     else:
         hero.cold = maxf(0.0, hero.cold - dt * 9.0)
     if hero.cold >= 100.0:
-        hero.take_damage(dt * 4.0)
+        hero.take_damage(2.0)
 
 func _unhandled_input(event: InputEvent) -> void:
     if event.is_action_pressed("restart"):
@@ -172,6 +175,8 @@ func _unhandled_input(event: InputEvent) -> void:
     if event.is_action_pressed("gather"):
         _gather_or_refuel()
     elif event.is_action_pressed("attack"):
+        if event is InputEventMouseButton:
+            _face_mouse()
         _attack()
     elif event.is_action_pressed("dodge"):
         if not hero.try_dodge(hero.facing, world):
@@ -215,10 +220,19 @@ func _gather_or_refuel() -> void:
     var amount := hero.gather_yield(kind)
     hero.bag[kind] = int(hero.bag[kind]) + amount
     selected["left"] = int(selected["left"]) - 1
+    if int(selected["left"]) <= 0:
+        world.blockers.erase(selected["pos"])
     if hero.grant_xp(2) and hero.perk == "":
         _note("Nivel %d! Escolha um talento: 7 Coletor / 8 Resistente." % hero.level)
     else:
         _note("+%d %s" % [amount, str(Items.LABELS[kind])])
+
+func _face_mouse() -> void:
+    var camera_origin := Vector2(650, 385) - World.project(hero.pos)
+    var mouse_world := World.unproject(get_viewport().get_mouse_position() - camera_origin)
+    var aim := mouse_world - hero.pos
+    if aim.length_squared() > 0.15:
+        hero.facing = aim.normalized()
 
 func _attack() -> void:
     var stats: Dictionary = Items.WEAPONS[hero.equipped]
@@ -237,7 +251,8 @@ func _attack() -> void:
     if selected == null:
         _note("Golpe no vazio.")
         return
-    if selected.hit(float(stats["damage"])):
+    var bonus := 2 if bool(hero.owned.get("upgraded_" + hero.equipped, false)) else 0
+    if selected.hit(float(stats["damage"]) + float(bonus)):
         hero.bag["hide"] = int(hero.bag["hide"]) + 1
         hero.bag["ore"] = int(hero.bag["ore"]) + 1
         hero.grant_xp(5)
@@ -269,6 +284,7 @@ func _build(kind: String) -> void:
         return
     Items.pay(hero.bag, cost)
     buildings.append({"kind": kind, "pos": at, "fuel": 75.0 if kind == "fire" else 0.0})
+    world.blockers.append(at)
     _note("Fogueira construida." if kind == "fire" else "Abrigo construido.")
 
 func _craft() -> void:
@@ -290,17 +306,15 @@ func _upgrade_weapon() -> void:
     if hero.equipped == "crude_sword":
         _note("Fabrique uma arma com C antes de melhorar.")
         return
+    if bool(hero.owned.get("upgraded_" + hero.equipped, false)):
+        _note("Esta arma ja foi melhorada.")
+        return
     var cost: Dictionary = {"ore": 3, "wood": 1}
     if not Items.can_pay(hero.bag, cost):
         _note("Melhoria custa 3 minerios e 1 madeira.")
         return
     Items.pay(hero.bag, cost)
-    # Melhoria intencionalmente limitada a uma melhoria por tipo neste prototipo.
-    if hero.owned.get("upgraded_" + hero.equipped, false):
-        hero.bag["ore"] += 3
-        hero.bag["wood"] += 1
-        _note("Esta arma ja foi melhorada.")
-        return
+    # Melhoria unica por arma neste prototipo.
     hero.owned["upgraded_" + hero.equipped] = true
     _note("Arma melhorada: bonus de 2 de dano.")
 
