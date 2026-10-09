@@ -1,6 +1,6 @@
 # RPG_SYSTEMS — Integração de RPG à Sobrevivência/Construção
 
-**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual CONFIRMADO: Pixel Art 2D isométrica detalhada, levemente dark**. Paleta exata, resolução e mundo permanecem TBD.
+**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual CONFIRMADO: Pixel Art 2D isométrica detalhada, levemente dark**. Paleta exata, resolução e lore permanecem TBD. **Mundo CONFIRMADO: fantasia medieval com florestas misteriosas, ruínas antigas, vilarejos e criaturas.**
 **Fonte:** ../../knowledge/game_design/progression.md, systems_design.md e combat_design.md.
 
 ## Objetivo de design
@@ -42,7 +42,7 @@ Evitar que RPG seja um sistema paralelo de XP sem sentido. Progressão deve torn
 
 ## Perguntas de direção ainda abertas
 - Combate: **tempo real confirmado**; quais armas, habilidades, mira, defesa e tipos de inimigos?
-- Mundo: fantasia medieval / natureza / pós-apocalipse / outro?
+- Mundo: **fantasia medieval confirmada**. Ainda falta definir história das ruínas, função dos vilarejos, espécies de criaturas e nível de magia.
 - Progressão: classes fixas / árvores livres / perks leves?
 - Missões: foco narrativo com NPCs ou objetivos sistêmicos de sobrevivência?
 
