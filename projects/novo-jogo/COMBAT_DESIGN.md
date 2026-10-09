@@ -1,6 +1,6 @@
-# COMBAT_DESIGN v0.1 — Combate em Tempo Real (2D Isométrico)
+# COMBAT_DESIGN v0.2 — Combate em Tempo Real (2D Isométrico)
 
-> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **CONFIRMADO**: **Pixel Art detalhada com atmosfera levemente dark**. **TBD**: armas, mira, defesa, habilidades, magia, classes, tipos de inimigos e paleta específica. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
+> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **CONFIRMADO**: **Pixel Art detalhada com atmosfera levemente dark**. **CONFIRMADO**: mundo de fantasia medieval com criaturas. **TBD**: armas, mira, defesa, habilidades, magia, classes, espécies e hostilidade das criaturas, além da paleta específica. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
 
 ## Propósito do combate
 Combate deve criar escolhas de **posicionamento, tempo de ataque, segurança e risco de sair da base**; não ser uma camada solta de dano/XP. Deve coexistir com explorar, coletar, construir e sobreviver, sem prejudicar a legibilidade isométrica.
@@ -12,7 +12,7 @@ Combate deve criar escolhas de **posicionamento, tempo de ataque, segurança e r
 
 ## M1-B — Encontro mínimo proposto
 Após a prova básica de coleta/construção/sobrevivência (M1-A), incorporar:
-1. **Uma ameaça visível** em região delimitada da clareira.
+1. **Uma criatura hostil de teste (PROPOSTA)** visível na clareira de floresta misteriosa. A presença de criaturas no mundo é CONFIRMADA; espécie, IA e hostilidade generalizada não foram definidas.
 2. **Um único verbo ofensivo** (ataque básico) de execução em tempo real, com alcance e recuperação verificáveis.
 3. **Uma ação hostil antecipável** (telegraph de ataque), com janela de resposta por **posicionamento/movimento**, sem supor esquiva/dash.
 4. **Feedback legível** de acerto, erro, dano e término do encontro; possibilidade de perder e reiniciar.
@@ -25,7 +25,7 @@ Alcance, dano, intervalo de ataque, velocidade do inimigo, HP, aggro, telegraph 
 - Ataque corpo a corpo ou à distância? Qual arma inicial?
 - Mira com mouse, direção do movimento, cursor projetado ou assistência?
 - Esquiva/dash, bloqueio, stamina, habilidades ativas ou somente movimentação?
-- Inimigos humanos, animais, criaturas, robôs ou outro tema?
+- **Criaturas fazem parte do mundo confirmado.** Quais espécies, temperamentos e papéis em combate? Outras categorias de oponentes são TBD.
 - Progressão de combate via perks/skills, classes ou equipamento?
 - Morte permanente, perda de itens, respawn ou checkpoint?
 - PVE apenas ou algum tipo de PVP? Multiplayer ainda TBD.
