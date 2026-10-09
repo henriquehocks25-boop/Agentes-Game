@@ -1,4 +1,4 @@
-# GDD v0.5 — RPG de Sobrevivência e Construção (2D Isométrico)
+# GDD v0.6 — RPG de Sobrevivência e Construção (2D Isométrico)
 
 **Estado:** M0 — direção parcialmente confirmada, outras decisões abertas.
 **CONFIRMADO pelo usuário:** jogo de **sobrevivência + construção + RPG**, em **2D isométrico**, com **combate em tempo real**. O **estilo visual está CONFIRMADO: Pixel Art detalhada, com atmosfera levemente dark**. A direção é sombria na medida certa, sem sacrificar cores, leitura e detalhes.
@@ -7,7 +7,8 @@
 ## 0. Ambientação confirmada
 - **Fantasia medieval**, com **florestas misteriosas, ruínas antigas, vilarejos e criaturas** como elementos centrais do mundo.
 - **CONTRATO:** [WORLD_DESIGN.md](WORLD_DESIGN.md) organiza a ambientação confirmada e propostas de função de cada lugar/elemento.
-- **TBD:** lore, sociedades, criaturas específicas, magia, narrativa, mapa, região inicial definitiva e papéis dos vilarejos.
+- **Magia CONFIRMADA:** rara e misteriosa, associada a **ruínas, artefatos e poderes antigos**. Suas mecânicas e origem permanecem TBD. Ver [MAGIC_SYSTEM.md](MAGIC_SYSTEM.md).
+- **TBD:** lore, sociedades, criaturas específicas, regras/acesso à magia, narrativa, mapa, região inicial definitiva e papéis dos vilarejos.
 
 ## 1. Visão
 **Proposta de fantasia:** explorar um ambiente perigoso, evoluir um personagem e erguer um refúgio que permita sobreviver e alcançar novas regiões.
@@ -58,7 +59,7 @@ O gênero RPG **não deve ser apenas uma barra de XP decorativa**. A progressão
 
 **Combate em tempo real é requisito confirmado.** Em M1, a proposta é testar um confronto mínimo e verificável, sem travar a definição de armas, magia, esquiva, lock-on ou direção de mira. Ver [COMBAT_DESIGN.md](COMBAT_DESIGN.md).
 
-**Propostas posteriores (M2/M3, exigem confirmação):** atributos adicionais, equipamentos, tipos de inimigos, NPCs e diálogos, novas missões, crafting especializado, classes, habilidades ativas, exploração com segredos e lore. **Não confirmado:** classes, magia, quantidade de ataques, habilidades e peso narrativo.
+**Propostas posteriores (M2/M3, exigem confirmação):** atributos adicionais, equipamentos, tipos de inimigos, NPCs e diálogos, novas missões, crafting especializado, classes, habilidades ativas, exploração com segredos e lore. **Não confirmado:** classes, acesso do jogador à magia, magias jogáveis, quantidade de ataques, habilidades e peso narrativo. **Confirmada somente a presença de magia rara e misteriosa no universo.**
 
 ## 5. Prova jogável M1 — hipótese de produção
 **Exemplar único proposto:** pequena **clareira de floresta misteriosa** isométrica com personagem, madeira e pedra, fogueira posicionável, confronto de tempo real com **uma criatura de teste (espécie TBD)**, objetivo simples, progressão de uma escolha e uma noite de frio. Ruínas completas e vilarejos não são requisitos do M1; avaliar marcos visuais sem sobrecarregar o teste.
@@ -73,7 +74,7 @@ Sistemas:
 7. **Feedback/HUD:** recursos, tempo/fase, frio, fogo, XP/nível, objetivo, escolha e condição vital em combate.
 8. **Resultado:** sobreviver à primeira noite ou perder; reiniciar a sessão claramente.
 
-**Fora do M1:** persistência, multiplayer, loot extenso, geração procedural, IA complexa, equipamento extenso, árvore de talentos, múltiplas armas/inimigos e artes finais em grande quantidade. **Uma prova mínima de combate real-time faz parte do escopo proposto, não combate elaborado.**
+**Fora do M1:** sistema de magia jogável, artefatos funcionais, persistência, multiplayer, loot extenso, geração procedural, IA complexa, equipamento extenso, árvore de talentos, múltiplas armas/inimigos e artes finais em grande quantidade. **Uma prova mínima de combate real-time faz parte do escopo proposto, não combate elaborado.**
 
 ## 6. Risco principal e experimentos
 **Risco central:** exploração/coleta ↔ construção ↔ progressão ↔ combate em tempo real podem parecer sistemas desconexos; é preciso validar se o confronto afeta a decisão de arriscar-se para obter recursos e se o controle é legível na isometria.
@@ -115,7 +116,7 @@ Nenhum teste foi realizado nesta fase documental.
 ## 9. Pendências de direção
 - **D001 — CONFIRMADA:** visualização 2D isométrica.
 - **D002 — CONFIRMADA:** **Pixel Art detalhada, um pouco dark**, 2D isométrica. Paleta exata, tamanho do pixel e referências específicas ainda **TBD**.
-- **D003 — CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **TBD:** lore, nível de magia, reinos, povos, espécies e papel dos vilarejos/ruínas.
+- **D003 — CONFIRMADA:** **fantasia medieval** com **florestas misteriosas, ruínas antigas, vilarejos e criaturas**. **TBD:** lore, reinos, povos, espécies e papel dos vilarejos/ruínas.
 - **D004 — EM ABERTO:** plataforma, Godot exato, resolução e controles.
 - **D005 — PROPOSTO:** fogueira/frio como primeiro loop; usuário ainda não aprovou.
 - **D006 — EM ABERTO:** single-player ou multiplayer (M1 proposto solo).
@@ -124,5 +125,6 @@ Nenhum teste foi realizado nesta fase documental.
 - **D009 — PROPOSTO:** primeiro mecanismo RPG = XP + escolha de benefício útil ao loop.
 - **D010 — PROPOSTO:** prova de combate com 1 ameaça (criatura provisória) e 1 ataque básico, sem decidir antecipadamente espécie, arma ou efeitos visuais.
 - **D011 — CONFIRMADO:** os quatro elementos de worldbuilding são componentes centrais do universo, não uma obrigação de implementar todas as regiões no primeiro protótipo.
+- **D012 — CONFIRMADA:** **magia rara e misteriosa**, vinculada a **ruínas, artefatos e poderes antigos**. Origem, acesso do personagem, regras e uso em combate/construção **TBD**.
 
 Mudanças futuras devem atualizar este GDD, FORJA_PROJECT e FORJA_STATE de forma consistente.
