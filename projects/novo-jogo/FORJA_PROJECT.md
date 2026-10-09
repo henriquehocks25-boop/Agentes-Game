@@ -1,54 +1,57 @@
 # FORJA_PROJECT — Contrato verificável do projeto
 
-> **M0 / Versão de planejamento 0.1.** CONFIRMADO = pedido explícito do usuário; PROPOSTO = hipótese; TBD = aberto. Não converter hipótese em requisito aprovado.
+> **M0 / planejamento v0.2.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
 
 ## Identidade
-- Nome: TBD (pasta técnica: novo-jogo)
-- Gênero: **CONFIRMADO — Sobrevivência / Construção**
-- Experiência desejada: **PROPOSTO — transformar ambiente hostil em abrigo funcional**
-- Pilares (até 4): **PROPOSTOS** — coleta com propósito; construção com consequência; pressão legível; progressão tangível
-- Godot versão exata: TBD (base de conhecimento de Godot 4.x; não equivale a seleção da versão do projeto)
+- Nome: TBD; diretório técnico: `projects/novo-jogo/`
+- Gênero: **CONFIRMADO — RPG + Sobrevivência + Construção**
+- Dimensionalidade/perspectiva: **CONFIRMADO — 2D isométrico** (sprites/cenários 2D em projeção isométrica)
+- Público/experiência: **PROPOSTO** — explorar, evoluir personagem, erguer refúgio e enfrentar riscos
+- Pilares (propostos): exploração recompensadora; construção com consequência; progressão RPG com escolhas; sobrevivência legível
+- Godot versão exata: TBD (conhecimento Godot 4.x não determina versão do projeto)
 - Renderer: TBD
-- Plataformas: TBD (PC como hipótese, não decisão)
-- Câmera / resolução / aspect: TBD (alternativas avaliadas em GDD)
-- Hardware mínimo / target FPS: TBD
-- Cena inicial (res://): TBD, sem projeto Godot criado
-- Branch / projeto isolado: **main**, arquivos de planejamento em projects/novo-jogo/ no repositório Agentes-Game
+- Plataforma: TBD
+- Câmera: **2D isométrica confirmada**, zoom, limites, resolução/aspect TBD
+- Hardware e alvo FPS: TBD
+- Cena inicial `res://`: TBD; sem código/projeto Godot existente nesta pasta
+- Branch: `main`; planejamento isolado em `projects/novo-jogo/`
 
 ## Design
-- Core loop: **PROPOSTO** — explorar → coletar madeira e pedra → construir/abastecer fogueira → sobreviver à noite
-- Meta loop: **PROPOSTO FUTURO** — melhorar acampamento e explorar
-- Progressão/economia: **PROPOSTO** — madeira disputa construção e combustível; pedra entra no custo estrutural
-- World/level layout: **PROPOSTO M1** — um mapa pequeno fixo, uma clareira, nós de recursos
-- InputMap / controles: TBD
-- Save schema version: TBD (nenhum save no M1 proposto)
+- Core loop: **PROPOSTO** — explorar → coletar → XP / decisão de perk → construir → sobreviver a evento noturno → progredir
+- Meta loop: **PROPOSTO** — ampliar base e especialização para novas regiões
+- RPG: **CONFIRMADO como gênero**; **PROPOSTO M1** — objetivo, XP e escolha entre duas melhorias funcionais
+- Combate: TBD (tempo real, turnos, outro ou não focado em combate)
+- Classes, magia, NPCs, missões narrativas: TBD
+- Recursos/economia: **PROPOSTO** — madeira e pedra; madeira para estrutura/combustível
+- Mundo: **PROPOSTO M1** — clareira fixa; bioma/ambientação final TBD
+- Controles/InputMap: TBD
+- Save schema: TBD; M1 proposto sem save
 
 ## Visual
-- Referências, MUST-HAVE, MUST-NOT, paleta/valores: TBD
-- Silhueta/material de personagem: TBD
-- Ambiente/biomas: TBD (clareira é só cenário de teste proposto)
-- Arte-fonte e pipeline: TBD
-- Restrições do renderer: TBD
+- Técnica: **CONFIRMADO — arte/cenários 2D em composição isométrica**, não 3D obrigatório
+- Estilo de arte (pixel art, ilustração etc.): TBD
+- Referências, MUST-HAVE/MUST-NOT, cores, silhuetas, ambiente, arte fonte: TBD
+- Contrato técnico preliminar: validar pivôs de sprites, camadas e profundidade, oclusão e leitura de construção no Godot 2D; configuração detalhada TBD
 
-## Arquitetura e dependências
-- Scenes/autoloads/resources principais: TBD após Godot/visão aprovados
-- Contratos de signals/events/interfaces: TBD
+## Arquitetura
+- Organização preliminar sugerida: cenas/Nodes por feature, dados de itens, receitas e perks independentes; **não implementada**
+- Scenes/autoloads/resources/interfaces reais: TBD
 - Plugins/SDK/licenças: TBD
-- Paths sob responsabilidade: projects/novo-jogo/
-- ADRs aprovadas: nenhuma
+- Paths: `projects/novo-jogo/`
+- ADRs: decisão confirmada de perspectiva/gênero registrada neste documento; ADR detalhada ainda não criada
 
 ## Validação
-- Critérios de aceite: documentados como **proposta** em GDD.md §6 e ROADMAP.md
-- Testes existentes: nenhum executado
-- Cena representativa: **PROPOSTA** — clareira com madeira, pedra, fogueira e primeira noite
-- Risco central: **PROPOSTO** — loop coleta/construção/frio pode não gerar escolha interessante
-- Baseline performance: não medida
-- Known bugs/limites: nenhum jogo implementado
-- Evidências verificadas: somente artefatos Markdown do planejamento no GitHub
-- Campos não verificados: versão Godot, câmera, plataforma, estética, mecânicas, controles, renderer, performance
+- Critérios: propostas no `GDD.md` e `ROADMAP.md`
+- Exemplar proposto: mapa isométrico, madeira/pedra, fogueira, risco da noite, progressão de 1 perk
+- Risco: repetição do loop sem decisão relevante + oclusão/legibilidade isométrica
+- Testes: **NOT_RUN**, nenhum projeto Godot executável
+- Performance: NOT_RUN
+- Evidências: somente arquivos Markdown salvos no GitHub
+- Ainda não verificados: Godot exato, arte, hardware, plataforma, combate, tempo de jogo, números de balanceamento
 
-## Pendências para sair de M0
-1. Confirmar perspectiva e dimensionalidade.
-2. Confirmar estética/atmosfera e plataforma.
-3. Aprovar ou adaptar o loop fogueira/frio.
-4. Revisar contrato de projeto e critérios antes de executar código.
+## Pendências para completar M0
+1. Definir estilo de arte e ambientação.
+2. Definir abordagem de RPG (inclui tipo de combate ou não).
+3. Confirmar plataforma/versão Godot e controles.
+4. Aprovar ou ajustar loop inicial fogueira/frio e prova de progressão.
+5. Revisar o escopo de M1 e os critérios antes da implementação.
