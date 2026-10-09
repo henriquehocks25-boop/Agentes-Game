@@ -1,6 +1,6 @@
 # COMBAT_DESIGN v0.1 — Combate em Tempo Real (2D Isométrico)
 
-> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **TBD**: estilo artístico (“outro estilo ainda a definir”), armas, mira, defesa, habilidades, magia, classes e tipos de inimigos. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
+> **CONFIRMADO**: combate em tempo real para RPG 2D isométrico de sobrevivência/construção. **CONFIRMADO**: **Pixel Art detalhada com atmosfera levemente dark**. **TBD**: armas, mira, defesa, habilidades, magia, classes, tipos de inimigos e paleta específica. Conteúdo proposto a seguir não é aprovação do usuário nem implementação.
 
 ## Propósito do combate
 Combate deve criar escolhas de **posicionamento, tempo de ataque, segurança e risco de sair da base**; não ser uma camada solta de dano/XP. Deve coexistir com explorar, coletar, construir e sobreviver, sem prejudicar a legibilidade isométrica.
@@ -8,7 +8,7 @@ Combate deve criar escolhas de **posicionamento, tempo de ataque, segurança e r
 ## Contrato confirmado
 - Tempo de resolução: **real time**, sem turno, grade tática ou pausa obrigatória para selecionar ação.
 - Mundo e câmera: **2D isométrico**, sem transformar o jogo em 3D apenas para implementar hitboxes.
-- Estética: **intencionalmente indefinida**. Não definir automaticamente pixel art, desenho, paleta, shader, sangue, luz ou VFX específicos.
+- Estética: **Pixel Art 2D isométrica detalhada, levemente sombria**. Manter ataques, silhuetas e antecipações visíveis sobre cenários mais escuros. Paleta exata e efeitos individuais ainda em aberto.
 
 ## M1-B — Encontro mínimo proposto
 Após a prova básica de coleta/construção/sobrevivência (M1-A), incorporar:
@@ -35,7 +35,7 @@ Alcance, dano, intervalo de ataque, velocidade do inimigo, HP, aggro, telegraph 
 - Separar **indicação antecipada do perigo** de **efeito de acerto**.
 - Cuidar de pivôs, ordenação por profundidade e ocultação atrás de árvores/estruturas.
 - Minimizar shake, efeitos excessivos e indicadores que encubram itens ou o chão.
-- Registrar critérios de arte somente após o usuário definir estilo.
+- Seguir [ART_DIRECTION.md](ART_DIRECTION.md) para escala/contorno de pixel, contraste, iluminação e legibilidade; os detalhes de VFX só serão aprovados com exemplar e revisão visual.
 
 ## Godot 2D — proposta técnica, não código
 - Input Map para ações semânticas (ex.: atacar), sem atribuir teclas até confirmar dispositivos.
