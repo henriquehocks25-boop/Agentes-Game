@@ -1,6 +1,6 @@
 # RPG_SYSTEMS — Integração de RPG à Sobrevivência/Construção
 
-**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual: TBD**.
+**Gênero RPG e combate em tempo real CONFIRMADOS.** As mecânicas concretas, os ataques, armas, inimigos, atributos e demais detalhes abaixo são **PROPOSTOS**, não foram aprovados nem implementados. **Estilo visual CONFIRMADO: Pixel Art 2D isométrica detalhada, levemente dark**. Paleta exata, resolução e mundo permanecem TBD.
 **Fonte:** ../../knowledge/game_design/progression.md, systems_design.md e combat_design.md.
 
 ## Objetivo de design
