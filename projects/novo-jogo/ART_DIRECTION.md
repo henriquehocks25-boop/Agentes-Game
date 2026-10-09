@@ -72,4 +72,4 @@ Mundo com volume, materiais reconhecíveis, textura de pixel intencional e uma a
 - `../../knowledge/visual/visual_validation_lab.md`: crítica por captura e rubrica.
 - `../../STUDIO_WORKFLOW.md`: exemplar visual antes de multiplicar assets.
 
-**Status:** documento de direção, sem assets criados, sem execução de Godot.
+**Status:** documento de direção; **arte pixel procedural provisória** criada em [game/scripts/pixel_art.gd](game/scripts/pixel_art.gd) para testar gameplay. **Sprites finais e animações quadro a quadro ainda não foram produzidos. Execução Godot NOT_RUN.**
