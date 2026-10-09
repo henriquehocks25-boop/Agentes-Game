@@ -1,10 +1,11 @@
 # FORJA_PROJECT — Contrato verificável do projeto
 
-> **M0 / planejamento v0.2.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
+> **M0 / planejamento v0.3.** CONFIRMADO = escolha do usuário; PROPOSTO = hipótese; TBD = pendente.
 
 ## Identidade
 - Nome: TBD; diretório técnico: `projects/novo-jogo/`
 - Gênero: **CONFIRMADO — RPG + Sobrevivência + Construção**
+- Combate: **CONFIRMADO — em tempo real** (não por turnos); regras específicas TBD
 - Dimensionalidade/perspectiva: **CONFIRMADO — 2D isométrico** (sprites/cenários 2D em projeção isométrica)
 - Público/experiência: **PROPOSTO** — explorar, evoluir personagem, erguer refúgio e enfrentar riscos
 - Pilares (propostos): exploração recompensadora; construção com consequência; progressão RPG com escolhas; sobrevivência legível
@@ -20,7 +21,7 @@
 - Core loop: **PROPOSTO** — explorar → coletar → XP / decisão de perk → construir → sobreviver a evento noturno → progredir
 - Meta loop: **PROPOSTO** — ampliar base e especialização para novas regiões
 - RPG: **CONFIRMADO como gênero**; **PROPOSTO M1** — objetivo, XP e escolha entre duas melhorias funcionais
-- Combate: TBD (tempo real, turnos, outro ou não focado em combate)
+- Combate: **CONFIRMADO — tempo real**. **PROPOSTO M1-B:** 1 encontro de ameaça e ataque básico. **TBD:** armas, mira, defesa, dodge, magia, ritmo, habilidades e IA
 - Classes, magia, NPCs, missões narrativas: TBD
 - Recursos/economia: **PROPOSTO** — madeira e pedra; madeira para estrutura/combustível
 - Mundo: **PROPOSTO M1** — clareira fixa; bioma/ambientação final TBD
@@ -29,7 +30,7 @@
 
 ## Visual
 - Técnica: **CONFIRMADO — arte/cenários 2D em composição isométrica**, não 3D obrigatório
-- Estilo de arte (pixel art, ilustração etc.): TBD
+- Estilo de arte: **TBD por escolha explícita do usuário** (“outro estilo ainda a definir”); não adotar pixel art, ilustração, low-poly ou qualquer default
 - Referências, MUST-HAVE/MUST-NOT, cores, silhuetas, ambiente, arte fonte: TBD
 - Contrato técnico preliminar: validar pivôs de sprites, camadas e profundidade, oclusão e leitura de construção no Godot 2D; configuração detalhada TBD
 
@@ -42,16 +43,16 @@
 
 ## Validação
 - Critérios: propostas no `GDD.md` e `ROADMAP.md`
-- Exemplar proposto: mapa isométrico, madeira/pedra, fogueira, risco da noite, progressão de 1 perk
-- Risco: repetição do loop sem decisão relevante + oclusão/legibilidade isométrica
+- Exemplar proposto: mapa isométrico, madeira/pedra, fogueira, risco da noite, progressão de 1 perk **e um encontro mínimo de combate em tempo real**
+- Risco: repetição do loop sem decisão relevante, combate desconectado da sobrevivência e legibilidade/oclusão isométrica
 - Testes: **NOT_RUN**, nenhum projeto Godot executável
 - Performance: NOT_RUN
 - Evidências: somente arquivos Markdown salvos no GitHub
-- Ainda não verificados: Godot exato, arte, hardware, plataforma, combate, tempo de jogo, números de balanceamento
+- Ainda não verificados: Godot exato, **estilo visual**, hardware, plataforma, **detalhes mecânicos de combate**, tempo de jogo, números de balanceamento
 
 ## Pendências para completar M0
-1. Definir estilo de arte e ambientação.
-2. Definir abordagem de RPG (inclui tipo de combate ou não).
+1. Definir estilo de arte e ambientação, mantendo o estilo TBD até escolha explícita.
+2. Definir detalhes de combate em tempo real: arma/ataque inicial, mira e defesa, sem presumir magia/classes.
 3. Confirmar plataforma/versão Godot e controles.
-4. Aprovar ou ajustar loop inicial fogueira/frio e prova de progressão.
-5. Revisar o escopo de M1 e os critérios antes da implementação.
+4. Aprovar ou ajustar loop inicial fogueira/frio, prova de progressão e encontro mínimo.
+5. Revisar escopo de M1 e critérios antes da implementação.
